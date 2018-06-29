@@ -1,0 +1,369 @@
+/* from responsive101-c2
+ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: rgba(182, 185, 169, 0.2);
+/*   display: grid;   */
+
+}
+
+/* .logo {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url('../img/SeeWhyLogo90.svg');
+  width: 45.5;
+  height: 45.5;
+} */
+
+.container {
+  /* width: 90%;
+  margin: 0 auto 0 auto;
+  display: grid;
+  grid-template-columns: (col ) 4.25fr repeat(9, (gutter) 1fr (col) 4.25fr ) (gutter);
+  grid-template-rows: auto repeat(5, 10rem); */
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "nav"
+    "introStudy"
+    "whatIDid"
+    "studyBlock1"
+    "studyBlock2"
+    "sidebar1"
+    "callout1"
+    "artifactsCollage"
+    "callout2"
+    "artifactsProgression"
+    "sidebar3"
+    "styleguide"
+    "studyBlock3"
+    "sketches"
+    "callout3"
+    "artifactsProgression2"
+    "sidebar4"
+    "prototypeFinal"
+    "studyBlock4"
+    "footer";
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+/* ----  grid structure  ---- */
+
+nav {
+  grid-area: nav;
+  background-color: #DFD24E;
+/*   vertical-align: middle;
+   */  display: flex;
+}
+
+section {
+  padding: 1rem 2.8rem;
+}
+
+.fullNav {
+  display: none;
+}
+
+.introStudy {
+  grid-area: introStudy;
+  background-color: #DFD24E;
+}
+
+.whatIDid {
+  grid-area: whatIDid;
+  background-color: rgba(182, 185, 169, 0.2);
+}
+
+.featureImg {
+  grid-area: featureImg;
+}
+
+.studyBlock1 {
+  grid-area: studyBlock1;
+}
+
+.studyBlock2 {
+  grid-area: studyBlock2;
+}
+
+.studyBlock3 {
+  grid-area: studyBlock3;
+}
+
+.studyBlock4 {
+  grid-area: studyBlock4;
+}
+
+.sidebar1 {
+  grid-area: sidebar1;
+  background-color: rgba(182, 185, 169, 0.2);
+}
+
+.sidebar2 {
+  grid-area: sidebar2;
+  background-color: rgba(182, 185, 169, 0.2);
+}
+
+.sidebar3 {
+  grid-area: sidebar3;
+  background-color: rgba(182, 185, 169, 0.2);
+}
+
+.sidebar4 {
+  grid-area: sidebar4;
+  background-color: rgba(182, 185, 169, 0.2);
+}
+
+.callout1 {
+  grid-area: callout1;
+}
+
+.callout2 {
+  grid-area: callout2;
+}
+
+.callout3 {
+  grid-area: callout3;
+}
+
+.artifactsCollage {
+  grid-area: artifactsCollage;
+}
+
+.artifactsProgression {
+  grid-area: artifactsProgression;
+}
+
+.artifactsProgression2 {
+  grid-area: artifactsProgression2;
+}
+
+.sketches {
+  grid-area: sketches;
+}
+
+.prototypeFinal {
+  grid-area: prototypeFinal;
+}
+
+.styleguide {
+  grid-area: styleguide;
+}
+
+
+
+footer {
+  grid-area: footer;
+  padding: 4rem 2.8rem;
+  background-color: rgba(182, 185, 169, 0.2);
+}
+
+
+
+
+/* should this be in typography.css ?? */
+p {
+  margin-bottom: 2rem;
+}
+
+
+.logo  {
+  width: 45.5px;
+  display: inline-block;
+  margin-left: 2.95rem;
+  margin-top: 1.85rem;
+/*   vertical-align: top;
+ */}
+
+
+img {
+  max-width: 100%;
+}
+
+
+
+
+/* ---- media query  ---- */
+@media screen and (min-width: 768px) {
+  .container {
+    background-color: white;
+    margin: 0 auto;
+    width: 70rem;
+  }
+
+  .fullNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .container {
+    padding: 0 10.8rem;
+    background-color: white;
+/* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(12, [col] 1fr);
+    grid-template-rows: repeat(30, [row] auto);
+    grid-gap: 2rem;
+    grid-row-gap: 0;
+
+
+    /* grid-template-areas:
+     "nav"
+     "introStudy"
+     "studyBlock1"
+     "studyBlock2"
+     "footer"; */
+
+    margin: 0 auto;
+    overflow: hidden; /* not sure I understand this */
+    width: 144rem;
+  }
+
+  .logo {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url('../img/SeeWhyLogoW.svg');
+  }
+
+  section {
+    padding: 0;
+  }
+
+
+
+    nav {
+      grid-column: col / span 12;
+      grid-row: row;
+      }
+
+
+
+    .introStudy {
+      /* padding: 4.6rem 0 1rem 0; */
+      grid-column: col  / span 12;
+      grid-row: row 2;
+    }
+
+    .whatIDid {
+      grid-column: col 11 / span 2;
+      grid-row: row 2;
+      background-color: #DFD24E;
+    }
+
+    .studyBlock1 {
+      grid-column: col 3 / span 7;
+      grid-row: row 5;
+    }
+
+    .studyBlock2 {
+      grid-column: col 3 / span 7;
+      grid-row: row 6;
+    }
+
+    .studyBlock3 {
+      grid-column: col 3 / span 7;
+      grid-row: 11;
+    }
+
+    .studyBlock4 {
+      grid-column: col 3 / span 7;
+      grid-row: 15;
+    }
+
+    .sidebar1 {
+      grid-column: col 10 / span 4;
+      grid-row: row 6;
+
+    }
+
+    .sidebar2 {
+      grid-column: col 10 / span 4;
+    }
+    .sidebar3 {
+      grid-column: col 10 / span 4;
+      grid-row: row 10;
+    }
+    .sidebar4 {
+      grid-column: col 10 / span 4;
+      grid-row: row 13;
+    }
+
+    .callout1 {
+      grid-column: col 4 / span 6;
+      grid-row: row 7;
+
+    }
+
+    .callout2 {
+      grid-column: col 4 / span 6;
+      grid-row: row 9;
+
+    }
+
+    .callout3 {
+      grid-column: col 4 / span 6;
+      grid-row: 12;
+    }
+
+    .artifactsCollage {
+      grid-column: col  / span 12;
+      grid-row: row 8;
+    }
+
+    .artifactsProgression {
+      grid-column: col  / span 9;
+      grid-row: row 10;
+    }
+
+    .artifactsProgression2 {
+      grid-column: col  / span 9;
+      grid-row: row 13;
+    }
+
+    .sketches {
+      grid-column: col 10 / span 3;
+      grid-row: 11;
+    }
+
+    .prototypeFinal {
+      grid-column: col  / span 12;
+      grid-row: 14;
+    }
+
+    .styleguide {
+      grid-column: col  / span 2;
+      grid-row: row 11;
+    }
+
+    footer {
+        grid-column: col / span 12;
+        grid-row: row 16;
+    }
+
+}
+
+
+
+
+/* colors
+blue: #135E80
+yellow: #DFD24E
+orange: #DF7D2E
+grey solid: #505148
+grey footer: rgba(182, 185, 169, 0.2)
+*/

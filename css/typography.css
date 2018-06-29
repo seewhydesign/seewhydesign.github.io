@@ -1,0 +1,160 @@
+
+body {
+  color: #505148;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+
+nav {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+
+
+/* ---- typography ---- */
+/* nav {
+  text-transform: uppercase;
+  color: #fff;
+  align-items: center;
+} */
+
+nav p {
+  font-size: 2rem;
+/*   color: white;
+   */
+   /* display: inline-block; */
+  letter-spacing: 0.3rem;
+  /* text-transform: uppercase; */
+}
+
+nav li {
+  display: inline-block;
+  color: #fff;
+  letter-spacing: 0.4rem;
+}
+
+
+.whatIDid li {
+  list-style-type: none;
+  display: inline;
+}
+
+
+h1, h2 {
+  font-family: 'Rufina', serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 4.8rem;
+  color: #fff;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 2.6rem;
+}
+
+h3 span {
+  color: #DFD24E;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+
+.boldIt {
+  font-weight: 600;
+}
+
+.sidebarTitle, .smallCaps {
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.underline-yellow {
+  border-bottom: 0.4rem solid #DFD24E;
+}
+
+.callout {
+  font-weight: 600;
+  color: #DF7D2E;
+}
+
+.credit {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.projectLink a {
+  color: #DF7D2E;
+}
+
+/* ----  appearance  ---- */
+a {
+  text-decoration: none;
+}
+
+
+
+
+
+/* ---- media query  ---- */
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1025px) {
+
+    nav, .intro, h1 {
+      color: #505148;
+    }
+
+
+    h1 {
+      font-size: 5rem;
+      line-height: 5.8rem;
+    }
+
+    h2 {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+
+    h3 {
+      font-size: 3.6rem;
+    }
+
+    h4 {
+      font-size: 2rem;
+    }
+
+    .whatIDid li {
+      display: flex;
+    }
+
+    .studyBlock p {
+      padding-left: 7.7rem;
+    }
+
+}
+
+
+
+
+/* colors
+blue: #135E80
+yellow: #DFD24E
+orange: #DF7D2E
+grey solid: #505148
+grey footer: rgba(182, 185, 169, 0.2)
+*/

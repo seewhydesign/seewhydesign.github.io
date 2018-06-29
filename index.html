@@ -2,52 +2,82 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cindy Young Design</title>
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/typography.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Rufina" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   </head>
   <body>
-<!--     <div class="gridContainer">
- -->
+
+    <div class="container">
 
     <nav>
-      <img src="img/SeeWhyLogo.svg" alt="Cindy Young C maze logo" width="45.5">
-      <p>Cindy Young Design</p>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="mailto:cindy@youngdesign.biz">Contact</a></li>
-        </ul>
+      <img class="logo" src="img/SeeWhyLogoW.svg" alt="Cindy Young C maze logo" width="45.5">
+      <div class="fullNav">
+        <p>Cindy Young Design</p>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="mailto:cindy@youngdesign.biz">Contact</a></li>
+          </ul>
+        </div>
     </nav>
 
-  <!-- Temporary line to show divisions -->
-          <hr />
+      <!-- <nav>
+        <figure class="logo" width="45.5px">
+          <img src="" alt="">
+        </figure>
+        <img class="logo" src="img/SeeWhyLogoW.svg" alt="Cindy Young C maze logo" >
+        <p>Cindy Young Design</p>
+          <a href="index.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="mailto:cindy@youngdesign.biz">Contact</a>
+          </ul>
+      </nav> -->
 
   <!-- Hero as text -->
-      <section>
-        <h1>Welcome. I&rsquo;m Cindy Young <br /> a designer working in Richmond, VA.</h1>
+      <section class="intro">
+        <h1>Hi. I&rsquo;m Cindy Young <br /> a designer working in Richmond, VA.</h1>
       </section>
   <!-- Work preview section -->
   <!-- Featured work FileWell-->
-      <section class="workPreview">
-        <p class="smallCaps">Featured Project | Filewell</p>
+      <section class="featureImg">
+
+        <img src="img/laptopSketch.png" alt="laptop image of Filewell">
+        <!-- <img src="img/cy_dots.svg" alt="background dot design"> -->
+      </section>
+
+      <section class="dots">
+        <img src="img/cydots.png" alt="background dot design">
+      </section>
+
+      <section class="featureText">
+        <p class="smallCaps underline-yellow">Featured Project | Filewell</p>
         <h2 class="projectBio">A solution for digital hoarding.</h2>
         <p class="projectLink"><a href="project.html">Read case study &#62;</a></p>
+      </section>
 
-        <img src="" alt="laptop image of Filewell">
-        <img src="" alt="background dot design">
 
   <!-- Gallery of past work -->
+      <section class="galleryImg">
         <img src="" alt="thumbnails of design work">
-        <img src="" alt="background dot design">
+        <!-- <img src="img/cy_dots.svg" alt="background dot design"> -->
+      </section>
 
-        <p class="smallCaps">Gallery</p>
+      <section class="dots2">
+        <img src="img/cydots.png" alt="background dot design">
+      </section>
+
+      <section class="galleryText">
+        <p class="smallCaps underline-yellow">Gallery</p>
         <h2 class="projectBio">To tell a story well.</h2>
         <p class="projectLink"><a href="gallery.html">View visual design work &#62;</a></p>
       </section>
 
 
-  <!-- Temporary line to show divisions -->
-      <hr />
 
   <!-- Footer -->
       <footer>
@@ -63,7 +93,7 @@
       </footer>
 
 
-<!--     </div>
- -->
+    </div>
+
   </body>
 </html>
