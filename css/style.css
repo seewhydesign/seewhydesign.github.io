@@ -1,5 +1,3 @@
-/* from responsive101-c2
- */
 * {
   box-sizing: border-box;
 }
@@ -9,224 +7,529 @@ html {
 }
 
 body {
-  background: rgba(182, 185, 169, 0.2);
-/*   display: grid;   */
+  /* background-color: #dadada; */
+  color: #505148;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  /* line-height: 2.6rem; */
+  margin: 0 auto;
 }
 
-.container {
+
+/* ------ navigation ------- */
+nav {
+  background-color: #135E80;
+  text-transform: uppercase;
+  /* display: block; */
+  letter-spacing: 0.2rem;
+  /* position: relative; */
+  /* position: fixed; */
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+.projectNav {
+  background-color: #DFD24E;
+}
+
+.aboutNav {
+  background-color: #135E80;
+}
+
+
+.mymark, .myname, .mynav {
+  /* float: left; */
+  /* display: inline-block; */
+  /* border: 1px solid white; */
+
+}
+
+.mymark {
+  padding: 2.8rem;
+}
+
+.myname {
+  display: none;
+}
+
+.mynav {
+  /* float: right; */
+  /* padding-right: 3rem; */
+}
+
+.mynav li, .mynav_grey li {
+  display: inline-block;
+  line-height: 4rem;
+  list-style-type: none;
+/* color: white; */
+  padding-top: 1.6rem;
+  padding-right: 2.8rem;
+  /* margin-right: 2rem; */
+  /* letter-spacing: 0.4rem; */
+}
+
+.mynav a {
+  color: #4285a4;
+}
+
+.mynav a:hover {
+  color: rgba(182, 185, 169, 0.8);
+}
+
+.mynav_grey a {
+  color: rgba(80, 81, 72, 0.5);;
+}
+
+.mynav_grey a:hover {
+  color: #fff;
+}
+
+
+
+.gridContainer {
   background-color: white;
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: minmax(100px, auto);
   grid-template-areas:
-    "nav"
-    "intro"
+    "hero"
     "featureImg"
     "featureText"
     "galleryImg"
     "galleryText"
     "footer";
+  /* margin: 0 auto; */
+  width: 100%;
+}
+
+.gridContainerStudy {
   margin: 0 auto;
   width: 100%;
 }
 
+section {
+  padding: 2.8rem;
+  /* border: 1px dotted red; */
+}
+
+
+
+.hero {
+  grid-area: hero;
+  background-color: #135E80;
+}
+
+.hero.casestudy {
+  background-color: #DFD24E;
+  padding-bottom: 4rem;
+}
+
+.hero.aboutPg {
+  background-color: #fff;
+}
+
+
+
+footer {
+  background-color: rgba(182, 185, 169, 0.2);
+  /* border: 3px dashed purple; */
+  padding: 4.1rem 2rem 5.6rem 2.8rem;
+}
+
+footer .fab {
+  /* color: #dadcd4; */
+  color: rgba(182, 185, 169, 0.5);
+  font-size: 3.3rem;
+  width: 8rem;
+}
+
+
 
 /* ----  grid structure  ---- */
-
-nav {
-  grid-area: nav;
-  background-color: #135E80;
-
-/*   vertical-align: middle;
-   */  display: flex;
-}
-
-.fullNav {
-  display: none;
-}
-
-.intro {
-  grid-area: intro;
-  background-color: #135E80;
-}
 
 .featureImg {
   grid-area: featureImg;
 }
 
-.dots {
+.decoration {
   grid-area: dots;
   display: none;
 }
 
+.dotline {
+  padding: 0;
+}
+
 .dots2 {
-  grid-area: dots2;
   display: none;
+  grid-area: dots2;
 }
 
 .featureText {
   grid-area: featureText;
+  padding-top: 1rem;
 }
 
 .galleryImg {
   grid-area: galleryImg;
+  margin-top: 5rem;
 }
 
 .galleryText {
   grid-area: galleryText;
+  padding-top: 1rem;
 }
 
-footer {
-  grid-area: footer;
-  padding: 4rem 2.8rem;
+/* ----  grid structure  caseStudy  ---- */
+
+
+.whatIDid, .sidebar1, .sidebar2, .sidebar3, .sidebar4 {
   background-color: rgba(182, 185, 169, 0.2);
 }
 
-section {
-  padding: 3.4rem 2.8rem;
+.whatIDid {
+  grid-area: whatIDid;
 }
 
-/* ---- typography ---- */
-/* nav {
-  text-transform: uppercase;
+.sidebar1 {
+  grid-area: sidebar1;
+}
+
+.sidebar2 {
+  grid-area: sidebar2;
+}
+
+.sidebar3 {
+  grid-area: sidebar3;
+}
+
+.sidebar4 {
+  grid-area: sidebar4;
+}
+
+
+.callout1 {
+  grid-area: callout1;
+}
+
+.callout2 {
+  grid-area: callout2;
+}
+
+.callout3 {
+  grid-area: callout3;
+}
+
+.artifactsCollage {
+  background-blend-mode: multiply;
+  background-size: 100%;
+  border-left: 1.4rem solid #DFD24E;
+  background: rgba(182, 185, 169, 0.2) url("/img/sketchFW.jpg") no-repeat 0% 100%;
+  grid-area: artifactsCollage;
+  padding-bottom: 20rem;
+}
+
+.artifactsProgression1, .artifactsProgression2, .artifactsProgression3 {
+  background-color: #DFD24E;
   color: #fff;
-  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.artifactsProgression2 p {
+  /* color: white; */
+  margin-bottom: 4rem;
+}
+
+.artifactsProgression3 p {
+  /* color: white; */
+  margin-bottom: 4rem;
+}
+
+
+.artifactsProgression1 {
+  grid-area: artifactsProgression;
+  display: none;
+}
+
+.artifactsProgression2 {
+  grid-area: artifactsProgression2;
+}
+
+.sketches {
+  grid-area: sketches;
+}
+
+.prototypeFinal {
+  grid-area: prototypeFinal;
+}
+
+.styleguide {
+  grid-area: styleguide;
+}
+
+
+
+
+/* -------  typography  ------- */
+h1, h2 {
+  font-family: 'Rufina', serif;
+  font-weight: 400;
+  /* border: 2px dotted orange; */
+}
+
+h1 {
+  color: #fff;
+  font-size: 3.5rem;
+  line-height: 4.8rem;
+}
+
+h1.casestudy {
+  color: #505148;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 4.8rem;
+  letter-spacing: -.03rem;
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 2.6rem;
+}
+
+h3 span {
+  color: #DFD24E;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+p, li {
+  line-height: 2.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.quote {
+  font-family: 'Rufina', serif;
+  font-size: 2.2rem;
+  line-height: 3.5rem;
+}
+
+.quote::before {
+  content: open-quote;
+  display: block;
+}
+
+.boldIt {
+  font-weight: 600;
+}
+
+
+.sidebarTitle, .smallCaps {
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  /* border: 2px dotted orange; */
+}
+
+
+.underline-yellow {
+  border-bottom: 0.3rem solid #DFD24E;
+  /* line-height: 2rem; */
+}
+
+.underline-white {
+  border-bottom: 0.3rem solid #fff;
+  /* line-height: 2rem; */
+}
+
+/* ------- add color to text ------- */
+.orange {
+  color: #DF7D2E;
+}
+
+
+
+
+
+.callout {
+  font-weight: 600;
+  color: #DF7D2E;
+}
+
+.callout::before {
+  content: url("/img/up.png");
+}
+
+.callout::after {
+  content: url("/img/down.png");
+}
+
+
+
+
+.credit {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  text-align: right;
+  color: rgb(182, 185, 169);
+  margin-top: 3rem;
+}
+
+
+/* -------  caseStudy specific  ------- */
+
+
+/* make li read as inline list with commas */
+
+ul.sidebarList {
+  list-style: none;
+}
+
+ul.sidebarList li {
+  display: inline;
+}
+
+ul.sidebarList li.sidebarTitle::after {
+  content: ": ";
+}
+
+ul.sidebarList li::after {
+  content: ", ";
+}
+
+ul.sidebarList li:last-child::after {
+  content: "";
+}
+
+.numbering {
+  display: none;
+}
+
+/* -------  links ------- */
+
+.projectLink a {
+  color: #DF7D2E;
+  /* border: 2px dotted orange; */
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #135E80;
+}
+
+/* a:active {
+  background-color: black;
 } */
 
-
-
-p {
-  margin-bottom: 2rem;
+a:visited {
+  color: DF7D2E;
 }
 
+footer p a {
+  color: #505148;
+  border-bottom: 0.05rem solid #505148;
+}
+
+footer p {
+  margin-bottom: 3rem;
+}
 
 
 /* ----  appearance  ---- */
-
-
-.logo  {
-  width: 45.5px;
-  display: inline-block;
-  margin-left: 2.95rem;
-  margin-top: 1.85rem;
-/*   vertical-align: top;
- */}
-
 
 img {
   max-width: 100%;
 }
 
-
-
-
-/* ---- media query  ---- */
-@media screen and (min-width: 768px) {
-  .container {
-    background-color: white;
-    margin: 0 auto;
-    width: 70rem;
-  }
-
-  .fullNav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+footer img {
+  max-width: 200%;
 }
 
-@media screen and (min-width: 1025px) {
-  .container {
-    padding: 0 10.8rem;
-    background-color: white;
-/* grid-template-columns: 1fr 1fr 1fr 1fr; */
-    grid-template-columns: repeat(12, [col] 1fr);
-    grid-template-rows: repeat(5, [row] auto);
-    grid-gap: 2rem;
-    grid-row-gap: 8rem;
+a.button {
+  border: 0.1rem solid #fff;
+  padding: 2rem 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  background-color: inherit;
+  color: #505148;
 
-
-    grid-template-areas:
-     "nav"
-     "intro"
-     "featureText"
-     "galleryImg"
-     "footer";
-
-    margin: 0 auto;
-    overflow: hidden; /* not sure I understand this */
-    width: 144rem;
-  }
-
-  section {
-    padding: 0;
-  }
-
-
-    nav, .intro, h1 {
-      background-color: #fff;
-    }
-
-    .intro {
-      padding: 4.6rem 0 1rem 0;
-    }
-
-
-
-    nav, footer {
-      grid-column: col / span 12;
-      grid-row: row;
-      }
-
-    .intro {
-      grid-column: col 2 / span 12;
-      grid-row: row 2;
-    }
-
-    .featureText {
-      grid-column: col 2 / span 3;
-      grid-row: row 3;
-    }
-
-    .featureImg {
-      grid-column: col 7 / span 7;
-      grid-row: row 3;
-      max-width: 70%;
-    }
-
-    .dots {
-      /* grid-area: dots; */
-      display: grid;
-      grid-column: col 6 / span 7;
-      grid-row: row 3;
-      z-index: 1;
-    }
-
-
-
-    .galleryText {
-      grid-column: col 8 / span 3;
-      grid-row: row 4;
-    }
-
-    .galleryImg {
-      grid-column: col / span 7;
-      grid-row: row 4;
-    }
-
-    .dots2 {
-      display: grid;
-      /* grid-area: dots2; */
-      grid-column: col / span 7;
-      grid-row: row 4;
-    }
-
-    footer {
-      grid-column: col / span 12;
-      grid-row: row 5;
-      }
+  /* margin-top: 6rem; */
 }
 
+a.button2 {
+  border: 0.1rem solid #505148;
+  padding: 2rem 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  background-color: inherit;
+  color: #505148;
+  margin-top: 2rem;
+}
+
+.centerIt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overlap {
+  background: url("/img/mindmap.png") no-repeat 0% 0%;
+  background-size: contain;
+  padding-top: 30rem;
+  margin-top: -6rem;
+}
+
+figure.top-crop {
+  overflow: hidden;
+  margin-left: -5rem;
+  width: 120%;
+}
+
+figure.top-crop img {
+  display: block;
+  width: 100%;
+  margin:-13.6% 0 2% 0;
+}
+
+figure.bottom-side-crop {
+  overflow: hidden;
+  margin-left: -12.6rem;
+  width: 185%;
+}
+
+figure.bottom-side-crop img {
+  display: block;
+  width: 100%;
+  margin:0 20% -18% 0;
+}
+
+figure.bottom-right-crop {
+  overflow: hidden;
+  margin-left: -2.8rem;
+  width: 125%;
+}
+
+/* figure.bottom-right-crop img {
+  display: block;
+  width: 100%;
+  margin:0 20% -18% 0;
+} */
 
 
 
