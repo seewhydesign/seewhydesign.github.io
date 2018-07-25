@@ -27,6 +27,14 @@ nav {
   vertical-align: middle;
 }
 
+.projectNav {
+  background-color: #DFD24E;
+}
+
+.aboutNav {
+  background-color: #135E80;
+}
+
 
 .mymark {
   padding: 2.8rem;
@@ -36,10 +44,6 @@ nav {
   display: none;
 }
 
-.mynav {
-  /* float: right; */
-  /* padding-right: 3rem; */
-}
 
 .mynav li {
   display: inline-block;
@@ -60,8 +64,8 @@ nav {
 
 
 
-.gridContainer {
-  background-color: white;
+.gridContainerStudy {
+  /* background-color: white;
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: minmax(100px, auto);
@@ -72,8 +76,7 @@ nav {
     "galleryImg"
     "galleryText"
     "footer";
-  /* margin: 0 auto; */
-  width: 100%;
+  width: 100%; */
 }
 
 
@@ -82,10 +85,17 @@ section {
   /* border: 1px dotted red; */
 }
 
+
 .hero {
   grid-area: hero;
   background-color: #135E80;
 }
+
+
+.hero.aboutPg {
+  background-color: #fff;
+}
+
 
 
 footer {
@@ -95,6 +105,7 @@ footer {
 }
 
 footer .fab {
+  /* color: #dadcd4; */
   color: rgba(182, 185, 169, 0.5);
   font-size: 3.3rem;
   width: 8rem;
@@ -122,20 +133,6 @@ footer .fab {
   grid-area: dots2;
 }
 
-.featureText {
-  grid-area: featureText;
-  padding-top: 1rem;
-}
-
-.galleryImg {
-  grid-area: galleryImg;
-  margin-top: 4rem;
-}
-
-.galleryText {
-  grid-area: galleryText;
-  padding-top: 1rem;
-}
 
 
 /* -------  typography  ------- */
@@ -151,13 +148,18 @@ h1 {
   line-height: 4.8rem;
 }
 
+h1.casestudy {
+  color: #505148;
+  padding-bottom: 2rem;
+}
+
 h2 {
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 4.8rem;
   letter-spacing: -.03rem;
   margin-bottom: 0;
-  margin-top: 1.8rem;
+  margin-top: 2rem;
 }
 
 h3 {
@@ -179,7 +181,16 @@ p, li {
   margin-bottom: 0.5rem;
 }
 
+.quote {
+  font-family: 'Rufina', serif;
+  font-size: 2.2rem;
+  line-height: 3.5rem;
+}
 
+.quote::before {
+  content: open-quote;
+  display: block;
+}
 
 .boldIt {
   font-weight: 600;
@@ -212,6 +223,24 @@ p, li {
 
 
 
+
+
+.callout {
+  font-weight: 600;
+  color: #DF7D2E;
+}
+
+.callout::before {
+  content: url("/img/up.png");
+}
+
+.callout::after {
+  content: url("/img/down.png");
+}
+
+
+
+
 .credit {
   font-size: 1.2rem;
   font-weight: 500;
@@ -221,7 +250,6 @@ p, li {
   color: rgb(182, 185, 169);
   margin-top: 3rem;
 }
-
 
 
 
@@ -275,7 +303,6 @@ a.button {
   letter-spacing: 0.1rem;
   background-color: inherit;
   color: #505148;
-
   /* margin-top: 6rem; */
 }
 
@@ -288,6 +315,13 @@ a.button2 {
   color: #505148;
   margin-top: 2rem;
 }
+
+.centerIt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 
 
