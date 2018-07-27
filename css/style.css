@@ -16,6 +16,11 @@ body {
   margin: 0 auto;
 }
 
+/* div {
+  border: 2px solid purple;
+  margin: 0 auto;
+} */
+
 
 /* ------ navigation ------- */
 nav {
@@ -72,19 +77,20 @@ nav {
     "galleryImg"
     "galleryText"
     "footer";
-  /* margin: 0 auto; */
+  margin: 0 auto;
   width: 100%;
 }
 
 
 section {
-  padding: 2.8rem;
+  padding: 1rem 2.8rem 1rem 2.8rem;
   /* border: 1px dotted red; */
 }
 
 .hero {
   grid-area: hero;
   background-color: #135E80;
+  padding-bottom: 4rem;
 }
 
 
@@ -100,12 +106,17 @@ footer .fab {
   width: 8rem;
 }
 
+footer .fab:hover {
+  color: #135E80;
+}
 
 
 /* ----  grid structure  ---- */
 
 .featureImg {
   grid-area: featureImg;
+  margin-top: -2.5rem;
+  /* border: 2px solid pink; */
 }
 
 .decoration {
@@ -130,11 +141,13 @@ footer .fab {
 .galleryImg {
   grid-area: galleryImg;
   margin-top: 4rem;
+  /* border: 2px solid pink; */
 }
 
 .galleryText {
   grid-area: galleryText;
   padding-top: 1rem;
+  /* border: 2px solid pink; */
 }
 
 
@@ -162,7 +175,8 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  line-height: 2.6rem;
+  line-height: 3.3rem;
+  font-weight: 300;
 }
 
 h3 span {
@@ -210,7 +224,9 @@ p, li {
   color: #DF7D2E;
 }
 
-
+.blueText {
+  color: #6ba1ba;
+}
 
 .credit {
   font-size: 1.2rem;
@@ -275,7 +291,6 @@ a.button {
   letter-spacing: 0.1rem;
   background-color: inherit;
   color: #505148;
-
   /* margin-top: 6rem; */
 }
 

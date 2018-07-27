@@ -101,19 +101,48 @@ footer .fab {
   width: 8rem;
 }
 
+footer .fab:hover {
+  color: #135E80;
+}
+
 
 
 /* ----  grid structure  ---- */
 
-
-
 .dotline {
   padding: 0;
+  margin-top: -.6rem;
 }
+
+.featureImg {
+  grid-area: featureImg;
+  /* margin-top: -2.5rem; */
+  /* border: 2px solid pink; */
+}
+
+.introStudy {
+  padding-bottom: 0rem;
+}
+
+.dotbackground {
+  background: url("/img/cydots.png") ;
+  background-size: contain;
+  margin: 2rem 0;
+}
+
 
 
 /* ----  grid structure  caseStudy  ---- */
 
+
+
+.studyBlock {
+  padding: 1rem 2.8rem 2rem 2.8rem;
+}
+
+.studyBlock1 {
+  padding: 4rem 2.8rem 2rem 2.8rem;
+}
 
 .whatIDid, .sidebar1, .sidebar2, .sidebar3, .sidebar4 {
   background-color: rgba(182, 185, 169, 0.2);
@@ -163,9 +192,12 @@ footer .fab {
 
 .artifactsProgression1, .artifactsProgression2, .artifactsProgression3 {
   background-color: #DFD24E;
-  color: #fff;
+  /* background-color: rgba(223, 210, 78, 0.8); */
+  color: #636458;
   margin-bottom: 2.5rem;
 }
+
+
 
 .artifactsProgression2 p {
   /* color: white; */
@@ -245,7 +277,7 @@ h4 {
 
 p, li {
   line-height: 2.6rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.4rem;
 }
 
 .quote {
@@ -290,20 +322,19 @@ p, li {
 
 
 
-
-
-.callout {
+.callout p {
   font-weight: 600;
   color: #DF7D2E;
+  padding-bottom: 0.8rem;
 }
 
-.callout::before {
-  content: url("/img/up.png");
+/* .callout::before {
+  content: url("/img/caretUp.jpg");
 }
 
 .callout::after {
   content: url("/img/down.png");
-}
+} */
 
 
 
@@ -398,7 +429,6 @@ a.button {
   letter-spacing: 0.1rem;
   background-color: inherit;
   color: #505148;
-
   /* margin-top: 6rem; */
 }
 
@@ -410,6 +440,17 @@ a.button2 {
   background-color: inherit;
   color: #505148;
   margin-top: 2rem;
+}
+
+a.button:hover {
+  background-color: #c5b725;
+  border: 0.1rem solid #DFD24E;
+  color: #fff;
+}
+
+a.button2:hover {
+  background-color: rgba(182, 185, 169, 0.2);
+  border: 0.1rem solid #fff;
 }
 
 .centerIt {
