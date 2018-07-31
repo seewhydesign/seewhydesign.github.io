@@ -14,14 +14,14 @@ body {
   font-size: 1.6rem;
   /* line-height: 2.6rem; */
   margin: 0 auto;
+  /* overflow-y: scroll; */
   overflow-x: hidden;
-
 }
 
 
 /* ------ navigation ------- */
 nav {
-  background-color: #135E80;
+  background-color: rgba(182, 185, 169, 0.4);
   display: flex;
   justify-content: space-between;
   letter-spacing: 0.2rem;
@@ -29,9 +29,6 @@ nav {
   vertical-align: middle;
 }
 
-.projectNav {
-  background-color: #DFD24E;
-}
 
 .mymark {
   padding: 2.8rem;
@@ -79,13 +76,13 @@ section {
 
 .hero {
   grid-area: hero;
-  background-color: #135E80;
+  background-color: rgba(182, 185, 169, 0.4);
 }
 
-.hero.casestudy {
+/* .hero.casestudy {
   background-color: #DFD24E;
   padding-bottom: 4rem;
-}
+} */
 
 
 
@@ -143,11 +140,7 @@ footer .fab:hover {
 }
 
 .studyBlock1 {
-  padding: 3rem 2.8rem 1rem 2.8rem;
-}
-
-.studyBlock2 {
-  padding-bottom: 4rem;
+  padding: 4rem 2.8rem 2rem 2.8rem;
 }
 
 .whatIDid, .sidebar1, .sidebar2, .sidebar3, .sidebar4 {
@@ -156,7 +149,6 @@ footer .fab:hover {
 
 .whatIDid {
   grid-area: whatIDid;
-  padding: 2.8rem 0;
 }
 
 .sidebar1 {
@@ -477,7 +469,6 @@ figure.top-crop {
   overflow: hidden;
   margin-left: -5rem;
   width: 120%;
-  max-width: 905px;
 }
 
 figure.top-crop img {

@@ -91,7 +91,7 @@ section {
 .hero {
   grid-area: hero;
   background-color: #135E80;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 
@@ -116,7 +116,7 @@ footer .fab:hover {
 
 .featureImg {
   grid-area: featureImg;
-  margin-top: -2.5rem;
+  margin-top: 2rem;
   /* border: 2px solid pink; */
 }
 
@@ -226,7 +226,7 @@ p, li {
 }
 
 .blueText {
-  color: #6ba1ba;
+  color: #7ba7bb;
 }
 
 .credit {
