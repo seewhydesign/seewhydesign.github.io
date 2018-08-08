@@ -11,35 +11,44 @@
   </head>
   <body>
 
-    <nav>
-      <div class="mymark">
-        <img src="img/SeeWhyLogoW.svg" alt="Cindy Young C maze logo" width="45.5" class="mymarkWhite">
-        <img src="img/SeeWhyLogo.svg" alt="Cindy Young C maze logo" width="45.5" class="mymarkGrey">
+    <div class="gridContainer">
 
-        <div class="myname">
-          <p>Cindy Young Design</p>
-        </div>
+        <nav class="nav01">
+          <div class="mymark hideDesktop">
+            <div class="">
+              <a href="index.html"><img class="logo" src="img/SeeWhyLogoW.svg" alt="Cindy Young C maze logo rotated 90 degrees" width="45.5"></a>
+            </div>
+            <div class="mynav hideDesktop">
+              <ul>
+                  <!-- <li><a href="index.html">Work</a></li> -->
+                <li><a href="about.html">About</a></li>
+                <li><a href="mailto:cindy@youngdesign.biz">Contact</a></li>
+              </ul>
+            </div>
+          </div>
 
-      </div>
+          <div class="myname hideMobile">
+            <div class="">
+              <a href="index.html"><img class="logo" src="img/SeeWhyLogo.svg" alt="Cindy Young C maze logo rotated 90 degrees" width="45.5"></a>
+            </div>
+            <div class="">
+              <p style="writing-mode: vertical-rl">Cindy Young Design</p>
+            </div>
+          </div>
+
+        </nav>
+
+          <div class="mynavDesktop hideMobile">
+            <ul>
+                <!-- <li><a href="index.html">Work</a></li> -->
+              <li><a href="about.html">About</a></li>
+              <li><a href="mailto:cindy@youngdesign.biz">Contact</a></li>
+            </ul>
+          </div>
 
 
 
-      <div class="mynav">
-        <ul>
-          <!-- <li><a href="index.html">Work</a></li> -->
-          <li><a href="about.html">About</a></li>
-          <li><a href="mailto:cindy@youngdesign.biz">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-
-
-    <!--     container    -->
-
-<div class="gridContainer">
-
-
-  <!-- Hero as text -->
+    <!-- Hero as text -->
       <section class="hero">
         <h1>Hi. I&rsquo;m Cindy Young.</h1>
         <h3 class="blueText">A Richmond-based designer of thoughtful, easy-to-use products. And a student of humanity, seeking to solve real problems for real people.</h3>
@@ -48,54 +57,48 @@
 
   <!-- Work preview section -->
   <!-- Featured work FileWell-->
+
+      <section class="featureImg">
+        <div class="">
+          <a href="filewell.html"><img src="img/laptopSketch.png" alt="laptop image of Filewell"></a>
+        </div>
+      </section>
+
       <section class="featureText">
         <p><span class="smallCaps underline-yellow">Featured Project | Filewell</span></p>
         <h2 class="projectBio">A solution for digital hoarding.</h2>
         <p class="projectLink"><a href="filewell.html">Read case study &#62;</a></p>
       </section>
 
-      <section class="featureImg">
-        <a a href="filewell.html"><img src="img/laptopSketch.png" alt="laptop image of Filewell">
-        <img class="decoration" src="" alt="background dot design"></a>
-      </section>
-
-      <section class="dots">
-      <!-- <img src="img/cydots.png" alt="background dot design"> -->
-    </section>
-
 
   <!-- Gallery of past work -->
+
+      <section class="galleryImg">
+        <div class="">
+          <img class="mobileGallery hideTablet" src="img/gallery3.jpg" alt="thumbnails of design work">
+        </div>
+        <div class="">
+          <img class="desktopGallery hideMobile showTablet" src="img/gallery3_separate.png" alt="thumbnails of design work">
+        </div>
+      </section>
+
       <section class="galleryText">
         <p><span class="smallCaps underline-yellow">Gallery</span></p>
         <h2 class="projectBio">To tell a story well.</h2>
         <p class="projectLink"><a href="gallery.html">View visual design work &#62;</a></p>
       </section>
 
-      <section class="galleryImg">
-        <img class="mobileGallery" src="img/gallery3.jpg" alt="thumbnails of design work">
-        <!-- <img class="decoration" src="" alt="background dot design"> -->
-        <img class="desktopGallery" src="img/gallery3_separate.png" alt="thumbnails of design work">
-
-      </section>
-
-      <section class="dots2">
-      <!-- <img src="img/cydots.png" alt="background dot design"> -->
-    </section>
-
-</div>
-
 
 
   <!-- Footer -->
-      <footer>
-        <section class="">
+      <footer class="full">
+        <div class="">
           <p>Learn more <a href="about.html">about</a> me or <a href="mailto:cindy@youngdesign.biz">contact</a> me. Download <a href="#">résumé</a>.</p>
-        </section>
+        </div>
 
-
-<!-- Social Media icons  -->
-        <section class="extrame">
+        <div class="extrame">
           <div class="">
+    <!-- Social Media icons  -->
             <a href="https://github.com/seewhydesign" target="_blank"><i class="fab fa-github-square" alt="icon for Github"></i></a>
             <a href="https://www.instagram.com/seewhydesign/" target="_blank"><i class="fab fa-instagram" alt="icon for Instagram"></i></a>
             <a href="https://www.linkedin.com/in/cyoungdesign/" target="_blank"><i class="fab fa-linkedin" alt="icon for LinkedIn"></i></a>
@@ -104,17 +107,10 @@
           <div class="">
             <p class="credit">Cindy Young, 2018. All Rights Reserved.</p>
           </div>
-
-
-
-        </section>
-
-        <div class="dotline">
-          <!-- <img src="img/cydot1.png" alt="row of dots"> -->
         </div>
-
-
       </footer>
+
+    </div>   <!-- end of container -->
 
 
   </body>
