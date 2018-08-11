@@ -44,7 +44,7 @@ nav div {
   padding-right: 1.8rem;
 }
 
-.mynav a, .mynavDesktop a {
+.mynav a, .mynavDesktop a, .myname a {
   color: rgba(80, 81, 72, 0.5);
 }
 
@@ -518,10 +518,12 @@ figure.bottom-right-crop {
     color: rgba(80, 81, 72, 0.8);
     display: grid;
     grid-column: 1 / 2;
-    grid-row: 1 / 3;
+    grid-row: 1 / 18;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     padding: 4rem 4rem 0 4rem;
+    position: fixed;
+    z-index: 150;
   }
 
   .myname div {
@@ -532,13 +534,18 @@ figure.bottom-right-crop {
   }
 
 
+    .myname p {
+    margin-bottom: 4rem;
+  }
+
+
   .mynavDesktop {
     display: grid;
     grid-column: 10 / 15;
     justify-content: flex-end;
     padding-right: 4rem;
     grid-row: 1;
-    z-index: 600;
+    z-index: 110;
   }
 
 
@@ -631,7 +638,7 @@ figure.bottom-right-crop {
       grid-column: 2 / 8;
       grid-row: 3;
       margin-top: -6rem;
-      z-index: 50;
+      z-index: 40;
     }
 
     .heroCollage2 {
@@ -646,7 +653,7 @@ figure.bottom-right-crop {
       grid-row: 3;
       align-items: flex-end;
       padding: 0 0 8rem 2rem;
-      z-index: 300;
+      z-index: 100;
     }
 
     .heroCollage3 {
@@ -654,7 +661,7 @@ figure.bottom-right-crop {
       grid-column: 11 / 14;
       grid-row: 3 / 5;
       margin-top: 20rem;
-      z-index: 200;
+      z-index: 90;
       filter: drop-shadow(0 0 0.2rem rgba(182, 185, 169, 0.8));
     }
 
@@ -703,7 +710,7 @@ figure.bottom-right-crop {
       grid-column: 1 / 6;
       grid-row: 7;
       margin-left: -4rem;
-      z-index: 10;
+      z-index: 30;
     }
 
     .userquote {
@@ -714,7 +721,7 @@ figure.bottom-right-crop {
       height: 20rem;
       margin-left: 2.7rem;
       background: rgba(217, 219, 211, 0.9);
-      z-index: 80;
+      z-index: 60;
     }
 
     .userquote .quote {
@@ -849,14 +856,14 @@ figure.bottom-right-crop {
     }
 
     .topLayer {
-      z-index: 100;
+      z-index: 120;
     }
 
     .numberingOrange  {
       color: #DF7D2E;
       font-size: 6rem;
       text-align: right;
-      z-index: 100;
+      z-index: 80;
     }
 
     .viewIt {

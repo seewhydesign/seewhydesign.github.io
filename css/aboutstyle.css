@@ -50,6 +50,10 @@ nav div {
   color: rgba(182, 185, 169, 0.8);
 }
 
+.pageOn {
+  color: rgba(182, 185, 169, 0.25);
+}
+
 .gridContainerStudy {
   margin: 0 auto;
   width: 100%;
@@ -333,6 +337,7 @@ a.button:hover {
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     padding: 4rem 4rem;
+    position: fixed;
   }
 
   .myname div {
@@ -460,7 +465,7 @@ a.button:hover {
     grid-column-gap: 1.38888%;
     grid-template-rows: repeat(auto, [row] auto);
     margin: 1% auto;
-    overflow: hidden; 
+    overflow: hidden;
     max-width: 98%;
   }
 

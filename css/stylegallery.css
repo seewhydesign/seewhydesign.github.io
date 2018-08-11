@@ -46,7 +46,7 @@ nav div {
   padding-right: 1.8rem;
 }
 
-.mynav a, .mynavDesktop a {
+.mynav a, .mynavDesktop a, .myname a {
   color: rgba(80, 81, 72, 0.5);
 }
 
@@ -520,10 +520,11 @@ figure.bottom-right-crop {
     color: rgba(80, 81, 72, 0.8);
     display: grid;
     grid-column: 1 / 2;
-    grid-row: 1 / 3;
+    grid-row: 1 / 8;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     padding: 4rem 4rem 0 4rem;
+    position: fixed;
   }
 
   .myname div {
@@ -531,6 +532,11 @@ figure.bottom-right-crop {
     flex-direction: column;
     align-items: center;
     padding-bottom: 3rem;
+  }
+
+  .myname p {
+    margin-bottom: 4rem;
+    /* padding-right: 8rem; */
   }
 
 
