@@ -41,7 +41,7 @@ nav div {
   letter-spacing: 0.2rem;
   list-style-type: none;
   padding-top: 1.6rem;
-  padding-right: 1.8rem;
+  padding-left: 1.8rem;
 }
 
 .mynav a, .mynavDesktop a, .myname a {
@@ -123,17 +123,28 @@ footer .fab:hover {
 }
 
 .studyBlock2 {
-  padding-bottom: 4rem;
+  /* padding-bottom: 4rem; */
 }
+
+.artifactLinks {
+  display: flex;
+  padding-top: 0;
+}
+
+.artifactLinks p {
+  padding-right: 1rem;
+}
+
+
 
 .whatIDid, .sidebar1, .sidebar2, .sidebar3, .sidebar4 {
   background-color: rgba(182, 185, 169, 0.2);
-  background-blend-mode: multiply;
+  /* background-blend-mode: multiply; */
   z-index: 50;
 }
 
-.whatIDid {
-  padding: 2.8rem 0;
+.whatIDid ul {
+  padding-left: 0;
 }
 
 
@@ -260,7 +271,9 @@ p, li {
   font-weight: 500;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
-  text-align: right;
+  padding-top: 2rem;
+
+  /* text-align: right; */
   color: rgb(182, 185, 169);
 }
 
@@ -329,7 +342,7 @@ img {
 
 
 a.button {
-  border: 0.1rem solid #fff;
+  border: 0.05rem solid #fff;
   padding: 2rem 4rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -338,7 +351,7 @@ a.button {
 }
 
 a.button2 {
-  border: 0.1rem solid #505148;
+  border: 0.05rem solid #505148;
   padding: 2rem 4rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -349,13 +362,13 @@ a.button2 {
 
 a.button:hover {
   background-color: #c5b725;
-  border: 0.1rem solid #DFD24E;
+  border: 0.05rem solid #DFD24E;
   color: #fff;
 }
 
 a.button2:hover {
   background-color: rgba(182, 185, 169, 0.2);
-  border: 0.1rem solid #fff;
+  border: 0.05rem solid #fff;
 }
 
 .centerIt {
@@ -442,9 +455,14 @@ figure.bottom-right-crop {
     padding-right: 0.5rem;
   }
 
+  .featureImg img {
+    width: 90%;
+  }
+
   .callout {
     padding-top: 5rem;
   }
+
 
   .artifactsCollage {
     background: rgba(182, 185, 169, 0.7) url("/img/sketchFW.jpg") no-repeat 0% 200%;
@@ -478,6 +496,11 @@ figure.bottom-right-crop {
     justify-content: space-between;
   }
 
+
+  .credit {
+    text-align: right;
+    padding-top: 0;
+  }
 
 }
 
@@ -652,7 +675,7 @@ figure.bottom-right-crop {
       grid-column: 8 / 11;
       grid-row: 3;
       align-items: flex-end;
-      padding: 0 0 8rem 2rem;
+      padding: 0 0 8rem 0rem;
       z-index: 100;
     }
 
@@ -688,11 +711,34 @@ figure.bottom-right-crop {
       grid-row: 5;
     }
 
+    .artifactLinks {
+      flex-direction: column;
+      grid-column: 11 / 14;
+      grid-row: 6;
+      align-self: center;
+      background-color: rgba(182, 185, 169, 0.2);
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      z-index: 120;
+      /* margin-bottom: 0rem; */
+    }
+
+  .artifactLinks div {
+    /* padding-left: 25rem; */
+  }
+
+    .artifactLinks p {
+      line-height: 0.3rem;
+      /* text-align: right; */
+      padding-left: 1.5rem;
+      /* margin-bottom: 0; */
+    }
+
     .sidebar1 {
       grid-column: 11 / 14;
       grid-row: 5 / 7;
-      padding: 4rem 1.5rem;
-      margin-bottom: 8rem;
+      padding: 3rem 1.5rem;
+      margin-bottom: 7rem;
     }
 
     .callout {
@@ -753,6 +799,10 @@ figure.bottom-right-crop {
       background-color: #DFD24E;
     }
 
+    .artifactsProgression1 .bleedOff {
+      margin-bottom: -1.8rem;
+    }
+
     .artifactsProgression2 {
       display: flex;
       justify-content: flex-end;
@@ -766,6 +816,10 @@ figure.bottom-right-crop {
       margin-top: 4rem;
       margin-bottom: 0;
       padding-bottom: 0;
+    }
+
+    .artifactsProgression1 div.numbering {
+      padding-bottom: 2.4rem;
     }
 
     .artifactsProgression1 div.numbering, .artifactsProgression2 div.numbering, .artifactsProgression3 div.numbering {
@@ -880,7 +934,7 @@ figure.bottom-right-crop {
     .featureImgSketch {
       display: grid;
       padding-top: 8rem;
-      width: 380px;
+      width: 550px;
     }
 
     .studyBlock4 {

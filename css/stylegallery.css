@@ -43,7 +43,7 @@ nav div {
   letter-spacing: 0.2rem;
   list-style-type: none;
   padding-top: 1.6rem;
-  padding-right: 1.8rem;
+  padding-left: 1.8rem;
 }
 
 .mynav a, .mynavDesktop a, .myname a {
@@ -262,8 +262,8 @@ p, li {
   font-weight: 500;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
-  text-align: right;
   color: rgb(182, 185, 169);
+  padding-top: 1.8rem;
 }
 
 
@@ -478,6 +478,11 @@ figure.bottom-right-crop {
   .extrame {
     display: flex;
     justify-content: space-between;
+  }
+
+  .credit {
+    text-align: right;
+    padding-top: 0;
   }
 
 

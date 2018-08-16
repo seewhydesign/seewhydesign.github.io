@@ -41,7 +41,7 @@ nav div {
   letter-spacing: 0.2rem;
   list-style-type: none;
   padding-top: 1.6rem;
-  padding-right: 1.8rem;
+  padding-left: 1.8rem;
 }
 
 .mynav a, .mynavDesktop a {
@@ -192,7 +192,7 @@ p, li {
   font-weight: 500;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
-  text-align: right;
+  padding-top: 1.8rem;
 }
 
 
@@ -282,6 +282,16 @@ img {
     padding-top: 0;
   }
 
+  .extrame {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .credit {
+    text-align: right;
+    padding-top: 0;
+  }
+
   .showTablet {
     display: grid;
   }
@@ -289,6 +299,7 @@ img {
   .hideTablet {
     display: none;
   }
+
 
 }
 
