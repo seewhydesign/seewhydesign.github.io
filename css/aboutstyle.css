@@ -81,6 +81,7 @@ section {
 }
 
 
+
 footer {
   padding: 4.1rem 2rem 5.6rem 2.8rem;
   background: rgba(182, 185, 169, 0.2) url("/img/cydot1.svg") repeat-x top/100%;
@@ -303,7 +304,6 @@ a.button:hover {
     text-align: right;
     padding-top: 0;
   }
-
 
 }
 
