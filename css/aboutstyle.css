@@ -6,6 +6,7 @@ html {
   font-size: 10px;
   overflow-y: scroll;
   overflow-x: hidden;
+  height: 100%;
 }
 
 body {
@@ -14,6 +15,7 @@ body {
   font-size: 1.6rem;
   margin: 0 auto;
   overflow-x: hidden;
+  height: 100%;
 }
 
 
@@ -328,6 +330,7 @@ a.button:hover {
     margin: 1% auto;
     overflow: hidden;
     max-width: 98%;
+    height: 98vh;
   }
 
 
