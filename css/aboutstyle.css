@@ -330,7 +330,7 @@ a.button:hover {
     margin: 1% auto;
     overflow: hidden;
     max-width: 98%;
-    height: 98vh;
+    min-height: 98vh;
   }
 
 
