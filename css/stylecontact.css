@@ -252,7 +252,7 @@ a.button:hover {
     background-color: #e2e3dd;
     margin: 1% auto;
     overflow: hidden;
-    height: 98vh;
+    min-height: 98vh;
   }
 
   section, .studyBlock, .whatIDid  {
