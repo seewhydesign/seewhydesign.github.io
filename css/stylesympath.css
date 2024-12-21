@@ -151,6 +151,10 @@ footer .fab:hover {
   padding-left: 2rem;
 }
 
+.featureImg img:first-of-type {
+    padding-left: 0;
+}
+
 .dotbackground {
   background: url("/img/cydots.svg") ;
   background-size: contain;
