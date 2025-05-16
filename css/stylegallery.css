@@ -782,6 +782,24 @@ figure.bottom-right-crop {
       grid-row: 9;
       align-self: end;
     }
+  .book8 {
+      display: grid;
+      grid-column: 2 / 11;
+      grid-row: 10;
+      margin-top:10rem;
+    }
+    .book9 {
+      display: grid;
+      grid-column: 9 / 14;
+      grid-row: 10;
+      margin-top: 5rem;
+    }
+    .book10 {
+      display: grid;
+      grid-column: 9 / 14;
+      grid-row: 10;
+      align-self: end;
+    }
 
 
     .userquote {
@@ -801,9 +819,10 @@ figure.bottom-right-crop {
 
 
     footer {
+      margin-top:10rem;
       background-size: 50%;
       grid-column: 1 / 15;
-      grid-row: 10;
+      grid-row: 11;
       padding: 4rem 11rem;
     }
 
