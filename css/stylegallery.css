@@ -725,6 +725,18 @@ figure.bottom-right-crop {
       padding: 13rem 10rem 0 10rem;
     }
 
+   .book1 {
+      display: grid;
+      grid-column: 2 / 11;
+      grid-row: 4;
+    }
+
+    .book2 {
+      display: grid;
+      grid-column: 9 / 14;
+      grid-row: 4;
+      margin-top: 30rem;
+    }
 
 
     .userquote {
