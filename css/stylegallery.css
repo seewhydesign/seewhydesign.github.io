@@ -728,13 +728,13 @@ figure.bottom-right-crop {
    .book1 {
       display: grid;
       grid-column: 2 / 11;
-      grid-row: 4;
+      grid-row: 7;
     }
 
     .book2 {
       display: grid;
       grid-column: 9 / 14;
-      grid-row: 4;
+      grid-row: 7;
       margin-top: 30rem;
     }
 
