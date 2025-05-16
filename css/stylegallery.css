@@ -704,9 +704,9 @@ figure.bottom-right-crop {
 
   .mag1 {
      display: grid;
-      grid-column: 2 / 7;
+      grid-column: 2 / 6;
       grid-row: 6;
-      margin-top:10rem;
+      margin-top:0rem;
   }
 
   .mag2 {
