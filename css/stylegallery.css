@@ -761,21 +761,21 @@ figure.bottom-right-crop {
     }
   .book5 {
       display: grid;
-      grid-column: 2 / 4;
+      grid-column: 4 / 6;
       grid-row: 9;
-      margin-top:16rem;
+      margin-top:5rem;
     }
     .book6 {
       display: grid;
-      grid-column: 5 / 13;
+      grid-column: 6 / 12;
       grid-row: 9;
-      margin-top: 10rem;
+      margin-top: 8rem;
     }
     .book7 {
       display: grid;
-      grid-column: 11 / 13;
+      grid-column: 2 / 5;
       grid-row: 9;
-      /* margin-top: 10rem; */
+      margin-bottom: 10rem;
       align-self: end;
     }
   .callout-book3 {
