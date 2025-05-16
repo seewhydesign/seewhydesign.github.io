@@ -759,6 +759,30 @@ figure.bottom-right-crop {
       grid-row: 8;
       align-self: end;
     }
+  .book5 {
+      display: grid;
+      grid-column: 2 / 4;
+      grid-row: 9;
+      margin-top:16rem;
+    }
+    .book6 {
+      display: grid;
+      grid-column: 5 / 13;
+      grid-row: 9;
+      margin-top: 10rem;
+    }
+    .book7 {
+      display: grid;
+      grid-column: 11 / 13;
+      grid-row: 9;
+      /* margin-top: 10rem; */
+      align-self: end;
+    }
+  .callout-book3 {
+      grid-column: 3 / 8;
+      grid-row: 9;
+      align-self: end;
+    }
 
 
     .userquote {
@@ -780,7 +804,7 @@ figure.bottom-right-crop {
     footer {
       background-size: 50%;
       grid-column: 1 / 15;
-      grid-row: 9;
+      grid-row: 10;
       padding: 4rem 11rem;
     }
 
