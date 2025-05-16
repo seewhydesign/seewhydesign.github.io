@@ -729,6 +729,7 @@ figure.bottom-right-crop {
       display: grid;
       grid-column: 2 / 11;
       grid-row: 7;
+      margin-top:10rem;
     }
 
     .book2 {
