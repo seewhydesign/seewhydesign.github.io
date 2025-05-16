@@ -702,16 +702,31 @@ figure.bottom-right-crop {
       padding-top: 3rem;
     }
 
+  .mag1 {
+     display: grid;
+      grid-column: 2 / 11;
+      grid-row: 6;
+      margin-top:10rem;
+  }
+
+  .mag2 {
+     display: grid;
+      grid-column: 2 / 11;
+      grid-row: 6;
+      margin-top:10rem;
+  }
+    
+
 
     .callout2 {
       margin-top: 3rem;
       grid-column: 5 / 11;
-      grid-row: 6;
+      grid-row: 7;
     }
 
     .studyBlock2 {
       grid-column: 4 / 12;
-      grid-row: 7;
+      grid-row: 8;
     }
 
 
@@ -728,76 +743,76 @@ figure.bottom-right-crop {
    .book1 {
       display: grid;
       grid-column: 2 / 11;
-      grid-row: 7;
+      grid-row: 8;
       margin-top:10rem;
     }
     .book2 {
       display: grid;
       grid-column: 9 / 14;
-      grid-row: 7;
+      grid-row: 8;
       margin-top: 5rem;
     }
     .callout-book {
       grid-column: 11 / 14;
-      grid-row: 7;
+      grid-row: 8;
       align-self: end;
     }
     .book3 {
       display: grid;
       grid-column: 3 / 8;
-      grid-row: 8;
+      grid-row: 9;
       margin-top:10rem;
     }
     .book4 {
       display: grid;
       grid-column: 10 / 13;
-      grid-row: 8;
+      grid-row: 9;
       margin-top: 10rem;
     }
   .callout-book2 {
       grid-column: 3 / 8;
-      grid-row: 8;
+      grid-row: 9;
       align-self: end;
     }
   .book5 {
       display: grid;
       grid-column: 5 / 7;
-      grid-row: 9;
+      grid-row: 10;
       margin-top:5rem;
     }
     .book6 {
       display: grid;
       grid-column: 7 / 13;
-      grid-row: 9;
+      grid-row: 10;
       margin-top: 8rem;
     }
     .book7 {
       display: grid;
       grid-column: 3 / 6;
-      grid-row: 9;
+      grid-row: 10;
       align-self: end;
     }
   .callout-book3 {
       grid-column: 3 / 8;
-      grid-row: 9;
+      grid-row: 10;
       align-self: end;
     }
   .book8 {
       display: grid;
       grid-column: 2 / 11;
-      grid-row: 10;
+      grid-row: 11;
       margin-top:10rem;
     }
     .book9 {
       display: grid;
       grid-column: 9 / 14;
-      grid-row: 10;
+      grid-row: 11;
       margin-top: 5rem;
     }
     .book10 {
       display: grid;
       grid-column: 9 / 14;
-      grid-row: 10;
+      grid-row: 11;
       align-self: end;
     }
 
@@ -822,7 +837,7 @@ figure.bottom-right-crop {
       margin-top:10rem;
       background-size: 50%;
       grid-column: 1 / 15;
-      grid-row: 11;
+      grid-row: 12;
       padding: 4rem 11rem;
     }
 
