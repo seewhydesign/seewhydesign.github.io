@@ -731,7 +731,6 @@ figure.bottom-right-crop {
       grid-row: 7;
       margin-top:10rem;
     }
-
     .book2 {
       display: grid;
       grid-column: 9 / 14;
@@ -742,6 +741,18 @@ figure.bottom-right-crop {
       grid-column: 11 / 14;
       grid-row: 7;
       align-self: end;
+    }
+    .book3 {
+      display: grid;
+      grid-column: 3 / 8;
+      grid-row: 8;
+      margin-top:10rem;
+    }
+    .book4 {
+      display: grid;
+      grid-column: 9 / 14;
+      grid-row: 8;
+      margin-top: 15rem;
     }
 
 
@@ -764,7 +775,7 @@ figure.bottom-right-crop {
     footer {
       background-size: 50%;
       grid-column: 1 / 15;
-      grid-row: 8;
+      grid-row: 9;
       padding: 4rem 11rem;
     }
 
