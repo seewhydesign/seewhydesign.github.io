@@ -704,16 +704,16 @@ figure.bottom-right-crop {
 
   .mag1 {
      display: grid;
-      grid-column: 2 / 11;
+      grid-column: 2 / 7;
       grid-row: 6;
       margin-top:10rem;
   }
 
   .mag2 {
      display: grid;
-      grid-column: 2 / 11;
+      grid-column: 5 / 14;
       grid-row: 6;
-      margin-top:10rem;
+      margin-top: 5rem;
   }
     
 
