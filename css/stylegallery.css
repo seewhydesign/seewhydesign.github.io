@@ -739,7 +739,7 @@ figure.bottom-right-crop {
       margin-top: 5rem;
     }
     .callout-book {
-      grid-column: 9 / 14;
+      grid-column: 11 / 14;
       grid-row: 7;
       align-self: end;
     }
