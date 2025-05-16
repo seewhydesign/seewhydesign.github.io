@@ -704,10 +704,9 @@ figure.bottom-right-crop {
 
     .mag3 {
      display: grid;
-      grid-column: 6 / 10;
-      grid-row: 6;
-      margin-top: 5rem;
-      margin-bottom: 10rem;
+    grid-column: 6 / 14;
+    padding-right: 4rem;
+    grid-row: 6;
   }
 
   .mag1 {
