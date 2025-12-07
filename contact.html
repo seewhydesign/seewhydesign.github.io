@@ -2,16 +2,6 @@
 <html lang="en" dir="ltr">
   <head>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123714652-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-123714652-1');
-</script>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Cindy Young Design</title>
@@ -30,13 +20,20 @@
           <div class="">
             <a href="index.html"><img class="logo" src="img/SeeWhyLogo90.svg" alt="Cindy Young C maze logo rotated 90 degrees" width="45.5"></a>
           </div>
-          <div class="mynav hideDesktop">
-            <ul>
-            <!-- <li><a href="index.html">Work</a></li> -->
-              <li><a href="about.html">About</a></li>
-              <li class="pageOn">Contact</li>
-            </ul>
-          </div>
+            
+           <div class="mynav hideDesktop">
+            <div class="dropdown">
+              <button class="dropbtn">Work</button>
+              <div class="dropdown-content">
+                <a href="/sympath.html">SymPath</a>
+                <a href="/filewell.html">FileWell</a>
+                <!-- <a href="/gallery.html">Gallery</a> -->
+              </div>
+            </div>              
+            <div><a href="about.html">About</a></div>
+            <!-- <div><a href="contact.html">Contact</a></div> -->
+          </div>           
+            
         </div>
 
         <div class="myname hideMobile">
@@ -50,14 +47,22 @@
 
       </nav>
 
+        
         <div class="mynavDesktop hideMobile">
-          <ul>
-          <!-- <li><a href="index.html">Work</a></li> -->
-            <li><a href="about.html">About</a></li>
-            <li class="pageOn">Contact</li>
-          </ul>
-        </div>
+            
+            <div class="dropdown">
+              <button class="dropbtn">Work</button>
+              <div class="dropdown-content">
+                <a href="/sympath.html">Sympath</a>
+                <a href="/filewell.html">FileWell</a>
+                <a href="/gallery.html">Gallery</a>
+              </div>
+            </div>              
+            <div><a href="about.html">About</a></div>
+            <!-- <div><a href="contact.html">Contact</a></div> -->
 
+        </div>
+        
 
       <section class="hero casestudy">
         <h1 class="casestudyText">Say hello.</h1>
@@ -105,3 +110,4 @@
     </div>     <!-- end of gridContainer -->
   </body>
 </html>
+
