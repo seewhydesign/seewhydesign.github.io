@@ -28,7 +28,7 @@ nav {
 nav div {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .mymark {
@@ -44,17 +44,84 @@ nav div {
   padding-left: 1.8rem;
 }
 
-.mynav a, .mynavDesktop a {
-  color: #4285a4;
+.mynav a {
+  color: #efefef;
+}
+
+.mynavDesktop a {
+  color: #505148;
 }
 
 .mynav a:hover {
   color: rgba(182, 185, 169, 0.8);
 }
 
-.pageOn {
-  color: rgba(182, 185, 169, 0.25);
+.mynav li, .mynavDesktop li, .mynavDesktop div button, .mynavDesktop div a, .mynav div button, .mynav div a {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  list-style-type: none;
+  padding-top: 1.8rem;
+  padding-left: 1.8rem;
+    /* padding:1.8rem; */
 }
+.mynav div button, .mynavDesktop div button {
+    padding-right: 1.8rem;
+    padding-bottom: 1.8rem;
+}
+
+.mynav button, .mynavDesktop button {
+    border:0;
+}
+
+
+   /* Dropdown Button  ----- update nav Dec 2025*/
+/* .mynavDesktop .dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+} */
+
+/* The container <div> - needed to position the dropdown content */
+.mynav .dropdow, .mynavDesktop .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.mynav .dropdown-content, .mynavDesktop .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.mynav .dropdown-content a, .mynavDesktop .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #135E83;
+    color: white;
+    }
+    
+     /* Dropdown Button  ----- end update nav Dec 2025*/
+
 
 .gridContainerStudy {
   margin: 0 auto;
@@ -365,16 +432,34 @@ a.button:hover {
     align-items: center;
     padding-bottom: 3rem;
   }
+    
+    .hideDesktop {
+      display: none;
+    }
+
+    .hideMobile {
+      display: grid;
+    }
 
 
-  .mynavDesktop {
+    .mynavDesktop {
+    display: flex;
+    grid-column: 10 / 15;
+    justify-content: flex-end;
+    padding-top: 4rem;
+    padding-right: 4rem;
+    grid-row: 1;
+    z-index: 600;
+  }
+    
+  /* .mynavDesktop {
     display: grid;
     grid-column: 10 / 15;
     justify-content: flex-end;
     padding-right: 4rem;
     grid-row: 1;
     z-index: 600;
-  }
+  } */
 
 
   section {
@@ -414,7 +499,7 @@ a.button:hover {
   }
 
   .mystory {
-    grid-column: 5 / 11;
+    grid-column: 3 / 10;
     grid-row: 2;
     padding-bottom: 8rem;
   }
@@ -467,10 +552,7 @@ a.button:hover {
     padding: 4rem 11rem;
   }
 
-  .hideDesktop {
-    display: none;
-  }
-
+  
 }
 
 
