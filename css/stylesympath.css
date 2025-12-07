@@ -20,8 +20,7 @@ body {
 /* -------- navigation -------- */
 
 nav {
-  /* background-color: #cad4c5; */
-    background-color: #dce6d7;
+  background-color: #cad4c5;
   vertical-align: middle;
 }
 
@@ -124,8 +123,7 @@ section {
 }
 
 .hero {
-  /* background-color: #cad4c5; */
-    background-color: #dce6d7;
+  background-color: #cad4c5;
 }
 
 .roadblock, .roadblock3, .symscreen01b, .symscreen03b {
@@ -143,13 +141,11 @@ section {
 }
 
 .roadblock2, .symscreen02b {
-  /* background-color: #CAD4C5; */
-    background-color: #dce6d7;
+  background-color: #CAD4C5;
 }
 
 .symscreen02b {
- /*  background: url("/img/sym/SymPath_d01.jpg") top 6rem center/1200px no-repeat, #CAD4C5; */
-  background: url("/img/sym/SymPath_d01.jpg") top 6rem center/1200px no-repeat, #dce6d7;
+ background: url("/img/sym/SymPath_d01.jpg") top 6rem center/1200px no-repeat, #CAD4C5; 
   background-blend-mode: multiply;
 }
 
@@ -157,7 +153,6 @@ section {
   background: url("/img/sym/SymPath_onb01.jpg") top 6rem center/1200px no-repeat, #1F6BA6;
   background-blend-mode: multiply;
 }
-
 
 
  .flip {
@@ -197,8 +192,7 @@ footer .fab:hover {
 
 .introStudy {
   padding-bottom: 1rem;
-  /* background-color: #cad4c5; */
-    background-color: #dce6d7;
+  background-color: #cad4c5;
 }
 
 .introStudy p {
@@ -207,9 +201,8 @@ footer .fab:hover {
 
 
 .featureImg {
-  /* background: #cad4c5 url("/img/cydot1.svg") repeat-x bottom/100%; */
-  background: #dce6d7 url("/img/cydot1.svg") repeat-x bottom/100%;
-  background-blend-mode: multiply;
+  background: #cad4c5 url("/img/cydot1.svg") repeat-x bottom/100%;  
+    background-blend-mode: multiply;
 }
 
 .featureImg img {
@@ -556,7 +549,6 @@ a.button2:hover {
 
   .introStudy {
     background: #cad4c5 url("") ;
-    background: #dce6d7 url("") ;  
   }
 
   .introStudy p:first-child:first-letter {
@@ -633,8 +625,7 @@ a.button2:hover {
 
   .gridContainerStudy {
     display: grid;
-    /* background-color: #cad4c5; */
-    background-color: #dce6d7;
+    background-color: #cad4c5;
     grid-template-columns: minmax(3.10457516%, auto) repeat(12, [row] 77px) minmax(3.10457516%, auto);
     grid-column-gap: 1.38888%;
     grid-template-rows: repeat(auto, [row] auto);
@@ -1049,9 +1040,7 @@ a.button2:hover {
       grid-column: 1 / 15;
       grid-row: 13;
       padding: 30rem 0 10rem 10rem;
-      /* background:  url("/img/sym/SymPath_d01.jpg") bottom 6rem left -4rem/1200px no-repeat, #CAD4C5; */
-        background:  url("/img/sym/SymPath_d01.jpg") bottom 6rem left -4rem/1200px no-repeat, #dce6d7;
-        
+      background:  url("/img/sym/SymPath_d01.jpg") bottom 6rem left -4rem/1200px no-repeat, #CAD4C5;
       background-blend-mode: multiply;
     }
 
@@ -1207,8 +1196,7 @@ a.button2:hover {
 
   .gridContainerStudy {
     display: grid;
-    /* background-color: #cad4c5; */
-    background-color: #dce6d7;
+    background-color: #cad4c5;
     grid-template-columns: minmax(8.888888%, auto) repeat(12, [row] 77px) minmax(8.888888%, auto);
     grid-column-gap: 1.38888%;
     grid-template-rows: repeat(auto, [row] auto);
@@ -1229,4 +1217,3 @@ orange: #DF7D2E > #b05913
 grey solid: #505148
 grey footer: rgba(182, 185, 169, 0.2)
 */
-
