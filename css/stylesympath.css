@@ -20,37 +20,98 @@ body {
 /* -------- navigation -------- */
 
 nav {
-  background-color: #cad4c5;
+  /* background-color: #cad4c5; */
+    background-color: #dce6d7;
   vertical-align: middle;
 }
 
 nav div {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
-
 
 .mymark {
   padding: 2.8rem;
 }
 
-.mynav li, .mynavDesktop li {
+
+.mynav li, .mynavDesktop li, .mynavDesktop div button, .mynavDesktop div a, .mynav div button, .mynav div a {
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   list-style-type: none;
-  padding-top: 1.6rem;
+  padding-top: 1.8rem;
   padding-left: 1.8rem;
+    /* padding:1.8rem; */
 }
+.mynav div button, .mynavDesktop div button {
+    padding-right: 1.8rem;
+    padding-bottom: 1.8rem;
+}
+
+.mynav button, .mynavDesktop button {
+    border:0;
+}
+
 
 .mynav a, .mynavDesktop a, .myname a {
-  color: #505148;
+  /* color: rgba(80, 81, 72, 0.5); */
+    color: #505148;
 }
 
-.mynav a:hover {
-  color: rgba(182, 185, 169, 0.8);
+.mynav a:hover, .mynavDesktop a:hover {
+  color: #135E83;
 }
+
+
+   /* Dropdown Button  ----- update nav Dec 2025*/
+/* .mynavDesktop .dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+} */
+
+/* The container <div> - needed to position the dropdown content */
+.mynav .dropdow, .mynavDesktop .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.mynav .dropdown-content, .mynavDesktop .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.mynav .dropdown-content a, .mynavDesktop .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #135E83;
+    color: white;
+    }
+    
+     /* Dropdown Button  ----- end update nav Dec 2025*/
+
 
 
 .gridContainerStudy {
@@ -63,7 +124,8 @@ section {
 }
 
 .hero {
-  background-color: #cad4c5;
+  /* background-color: #cad4c5; */
+    background-color: #dce6d7;
 }
 
 .roadblock, .roadblock3, .symscreen01b, .symscreen03b {
@@ -81,11 +143,13 @@ section {
 }
 
 .roadblock2, .symscreen02b {
-  background-color: #CAD4C5;
+  /* background-color: #CAD4C5; */
+    background-color: #dce6d7;
 }
 
 .symscreen02b {
-  background: url("/img/sym/SymPath_d01.jpg") top 6rem center/1200px no-repeat, #CAD4C5;
+ /*  background: url("/img/sym/SymPath_d01.jpg") top 6rem center/1200px no-repeat, #CAD4C5; */
+  background: url("/img/sym/SymPath_d01.jpg") top 6rem center/1200px no-repeat, #dce6d7;
   background-blend-mode: multiply;
 }
 
@@ -133,7 +197,8 @@ footer .fab:hover {
 
 .introStudy {
   padding-bottom: 1rem;
-  background-color: #cad4c5;
+  /* background-color: #cad4c5; */
+    background-color: #dce6d7;
 }
 
 .introStudy p {
@@ -142,7 +207,8 @@ footer .fab:hover {
 
 
 .featureImg {
-  background: #cad4c5 url("/img/cydot1.svg") repeat-x bottom/100%;
+  /* background: #cad4c5 url("/img/cydot1.svg") repeat-x bottom/100%; */
+  background: #dce6d7 url("/img/cydot1.svg") repeat-x bottom/100%;
   background-blend-mode: multiply;
 }
 
@@ -311,7 +377,7 @@ p, li {
 
 .callout p {
   font-weight: 600;
-  color: #DF7D2E;
+  color: #b05913;
   padding-bottom: 0.8rem;
 }
 
@@ -356,7 +422,7 @@ ul.sidebarList li:last-child::after {
 /* -------  links ------- */
 
 .projectLink a {
-  color: #DF7D2E;
+  color: #135E80;
 }
 
 a {
@@ -490,6 +556,7 @@ a.button2:hover {
 
   .introStudy {
     background: #cad4c5 url("") ;
+    background: #dce6d7 url("") ;  
   }
 
   .introStudy p:first-child:first-letter {
@@ -566,7 +633,8 @@ a.button2:hover {
 
   .gridContainerStudy {
     display: grid;
-    background-color: #cad4c5;
+    /* background-color: #cad4c5; */
+    background-color: #dce6d7;
     grid-template-columns: minmax(3.10457516%, auto) repeat(12, [row] 77px) minmax(3.10457516%, auto);
     grid-column-gap: 1.38888%;
     grid-template-rows: repeat(auto, [row] auto);
@@ -613,16 +681,26 @@ a.button2:hover {
     margin-bottom: 4rem;
   }
 
+    .hideDesktop {
+      display: none;
+    }
 
-  .mynavDesktop {
-    display: grid;
+    .hideMobile {
+      display: grid;
+    }
+
+
+ .mynavDesktop {
+    display: flex;
     grid-column: 10 / 15;
     justify-content: flex-end;
+    padding-top: 4rem;
     padding-right: 4rem;
     grid-row: 1;
-    z-index: 110;
+    z-index: 600;
   }
-
+    
+    
 
   section {
     padding: 0;
@@ -785,7 +863,7 @@ a.button2:hover {
       grid-column: 11 / 14;
       grid-row: 6;
       align-self: flex-end;
-      background-color: rgba(202, 212, 197, 0.6);
+      background-color: rgba(202, 212, 197, 0.15);
       padding-top: 1rem;
       padding-bottom: 5rem;
       z-index: 120;
@@ -971,7 +1049,9 @@ a.button2:hover {
       grid-column: 1 / 15;
       grid-row: 13;
       padding: 30rem 0 10rem 10rem;
-      background:  url("/img/sym/SymPath_d01.jpg") bottom 6rem left -4rem/1200px no-repeat, #CAD4C5;
+      /* background:  url("/img/sym/SymPath_d01.jpg") bottom 6rem left -4rem/1200px no-repeat, #CAD4C5; */
+        background:  url("/img/sym/SymPath_d01.jpg") bottom 6rem left -4rem/1200px no-repeat, #dce6d7;
+        
       background-blend-mode: multiply;
     }
 
@@ -1117,13 +1197,6 @@ a.button2:hover {
       padding: 4rem 11rem;
     }
 
-    .hideDesktop {
-      display: none;
-    }
-
-    .hideMobile {
-      display: grid;
-    }
 
   }
 
@@ -1134,7 +1207,8 @@ a.button2:hover {
 
   .gridContainerStudy {
     display: grid;
-    background-color: #cad4c5;
+    /* background-color: #cad4c5; */
+    background-color: #dce6d7;
     grid-template-columns: minmax(8.888888%, auto) repeat(12, [row] 77px) minmax(8.888888%, auto);
     grid-column-gap: 1.38888%;
     grid-template-rows: repeat(auto, [row] auto);
@@ -1151,7 +1225,8 @@ a.button2:hover {
 /* colors
 blue: #135E80
 yellow: #DFD24E
-orange: #DF7D2E
+orange: #DF7D2E > #b05913
 grey solid: #505148
 grey footer: rgba(182, 185, 169, 0.2)
 */
+
