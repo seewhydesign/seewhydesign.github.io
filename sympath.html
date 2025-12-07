@@ -1,414 +1,1232 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123714652-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-123714652-1');
-</script>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cindy Young Design SymPath</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/stylesympath.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Rufina" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  </head>
-
-  <body>
-
-    <div class="gridContainerStudy">
-
-      <nav class="nav01">
-        <div class="mymark hideDesktop">
-          <div class="">
-            <a href="index.html"><img class="logo" src="img/SeeWhyLogo90.svg" alt="Cindy Young C maze logo rotated 90 degrees" width="45.5"></a>
-          </div>
-          <div class="mynav hideDesktop">
-            <ul>
-            <!-- <li><a href="index.html">Work</a></li> -->
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="myname hideMobile">
-          <div class="">
-            <a href="index.html"><img class="logo" src="img/SeeWhyLogo90.svg" alt="Cindy Young C maze logo rotated 90 degrees" width="45.5"></a>
-          </div>
-          <div class="">
-            <p style="writing-mode: vertical-rl">Cindy Young Design</p>
-            <p style="writing-mode: vertical-rl"><a href="filewell.html">•  Next Project  •</a></p>
-          </div>
-        </div>
-
-      </nav>
-
-        <div class="mynavDesktop hideMobile">
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-
-      <section class="hero casestudy">
-        <p><span class="smallCaps underline-orange">SymPath</span></p>
-        <h1 class="casestudyText">Building a solid product path</h1>
-      </section>
-
-
-      <section class="introStudy">
-        <div class="">
-          <p>Changes in health can be disorienting. SymPath empowers people to easily keep record of the symptom details that healthcare providers will want to know. This case study focuses on the testing and refining design that paved a solid product path.</p>
-        </div>
-      </section>
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  color: #505148;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+
+/* -------- navigation -------- */
+
+nav {
+  /* background-color: #cad4c5; */
+    background-color: #dce6d7;
+  vertical-align: middle;
+}
+
+nav div {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.mymark {
+  padding: 2.8rem;
+}
+
+
+.mynav li, .mynavDesktop li, .mynavDesktop div button, .mynavDesktop div a, .mynav div button, .mynav div a {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  list-style-type: none;
+  padding-top: 1.8rem;
+  padding-left: 1.8rem;
+    /* padding:1.8rem; */
+}
+.mynav div button, .mynavDesktop div button {
+    padding-right: 1.8rem;
+    padding-bottom: 1.8rem;
+}
+
+.mynav button, .mynavDesktop button {
+    border:0;
+}
+
+
+.mynav a, .mynavDesktop a, .myname a {
+  /* color: rgba(80, 81, 72, 0.5); */
+    color: #505148;
+}
+
+.mynav a:hover, .mynavDesktop a:hover {
+  color: #135E83;
+}
+
+
+   /* Dropdown Button  ----- update nav Dec 2025*/
+/* .mynavDesktop .dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+} */
+
+/* The container <div> - needed to position the dropdown content */
+.mynav .dropdow, .mynavDesktop .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.mynav .dropdown-content, .mynavDesktop .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.mynav .dropdown-content a, .mynavDesktop .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
 
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
 
-      <section class="featureImg hideDesktop">
-          <img src="img/sym/SymPath_01.jpg" alt="Preview of SymPath screen">
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #135E83;
+    color: white;
+    }
+    
+     /* Dropdown Button  ----- end update nav Dec 2025*/
 
-        <img src="img/sym/SymPath_path.jpg" alt="Preview of SymPath screen">
 
-        <img src="img/sym/SymPath_faces.jpg" alt="Preview of SymPath screen">
-      </section>
 
+.gridContainerStudy {
+  margin: 0 auto;
+  width: 100%;
+}
 
-      <section class="whatIDid">
-        <ul class="sidebarList">
-          <li class="sidebarTitle">My roles</li>
-          <li>User Research</li>
-          <li>UI Design</li>
-          <li>Visual Design</li>
-          <li>Branding &amp; Identity</li>
-          <li>User Testing</li>
-        </ul>
-        <ul class="sidebarList">
-          <li class="sidebarTitle">Tools used</li>
-          <li>Sketch</li>
-          <li>InVision</li>
-          <li>Zoom</li>
-          <li>Usability Hub</li>
-          <li>Adobe Illustrator</li>
-          <li>Adobe Photoshop</li>
-        </ul>
-      </section>
+section {
+  padding: 2.8rem;
+}
 
+.hero {
+  /* background-color: #cad4c5; */
+    background-color: #dce6d7;
+}
 
-      <section class="heroCollage hideMobile">
-        <img src="img/sym/SymPath_01.jpg" alt="" width="400">
-      </section>
+.roadblock, .roadblock3, .symscreen01b, .symscreen03b {
+  background-color: #1F6BA6;
+  color: #fff;
+}
 
-      <section class="heroCollage2 hideMobile">
-        <img src="img/sym/SymPath_path.jpg" alt="" width="300">
-      </section>
+.symscreen01b {
+  background: url("/img/sym/SymPath_set01.jpg") top -4rem center/1200px no-repeat, #1F6BA6;
+  background-blend-mode: multiply;
+}
 
+.radius img {
+  border-radius: 40px;
+}
 
-      <section class="heroCollage3 hideMobile">
-        <img src="img/sym/SymPath_faces.jpg" alt="" width="300">
-      </section>
+.roadblock2, .symscreen02b {
+  /* background-color: #CAD4C5; */
+    background-color: #dce6d7;
+}
 
+.symscreen02b {
+ /*  background: url("/img/sym/SymPath_d01.jpg") top 6rem center/1200px no-repeat, #CAD4C5; */
+  background: url("/img/sym/SymPath_d01.jpg") top 6rem center/1200px no-repeat, #dce6d7;
+  background-blend-mode: multiply;
+}
 
-    <!-- to wrap sections in white -->
+.symscreen03b {
+  background: url("/img/sym/SymPath_onb01.jpg") top 6rem center/1200px no-repeat, #1F6BA6;
+  background-blend-mode: multiply;
+}
 
-      <section class="wrapWhite hideMobile">
-      </section>
 
-      <section class="studyBlock studyBlock1">
-        <h3><span>01</span> The problem</h3>
-        <p>Acting as a caregiver for several people, I wished I had a more efficient tool to track symptom details so I could better communicate with healthcare professionals during the brief face-to-face appointments.</p>
-        <h3><span>02</span> The solution</h3>
-        <p>SymPath, an iOS app, empowers the user to record symptom details that are important to healthcare providers. Based on insight derived from user research, the app allows the user to choose between two paths so she can customize her experience and determine the type of detail she wants to collect.</p>
-      </section>
 
+ .flip {
+   transform: rotate(-90deg);
+   margin-left: 30rem;
+   /* padding-top: 8rem; */
+ }
 
-      <section class="sidebar1">
-        <p class="sidebarTitle">Studies support app's value</p>
-        <p>There is the growing evidence that when a person becomes an active participant in her health care, she can “experience better health outcomes and incur lower costs.”</p>
-        <p class="projectLink"><a  href="https://www.healthaffairs.org/do/10.1377/hpb20130214.898775/" target="_blank"> Source &#62;</a></p>
+ .bleedOff {
+   margin-bottom: -20rem;
+ }
 
-      </section>
+.artifactsProgression1 {
+  color: #fff;
+  background-color: #1F6BA6;
+}
 
+footer {
+  background: rgba(182, 185, 169, 0.2) url("/img/cydot1.svg") repeat-x top/100%;
+  padding: 4.1rem 2rem 5.6rem 2.8rem;
+}
 
+footer .fab {
+  color: rgba(182, 185, 169, 0.5);
+  font-size: 3.3rem;
+  width: 8rem;
+}
 
+footer .fab:hover {
+  color: #135E80;
+}
 
 
 
-      <section class="studyBlock studyBlock2">
-        <h3><span>03</span> The process</h3>
-        <h4>Research to determine need and value</h4>
-        <p>I had a need. And having spent more than 300 hours assisting in hospitals as a nursing student, I felt I had insight to build a useful tool. I knew the assessment questions that healthcare professionals ask to collect the data needed to make diagnoses and care plans.</p>
-        <p>So, my challenges were:</p>
-        <ol>
-          <li> to find out if other people had a need for such an app, and if so, </li>
-          <li>to build a tool that empowered users to record meaningful data, allowing them to be engaged participants in their own health care.</li>
-        </ol>
+/* ----  grid structure  ---- */
 
-        <p><span class="boldIt">Uncover user needs:</span> I asked people if they ever tracked symptoms (75% did) and how they did it (57% claimed to remember details unaided).</p>
-        <p>I was envious of their abilities. I could never seem to remember how many weeks it had been since that tumble that caused a fracture, or the names of the last three specialists we had seen and the different tests ordered.</p>
-        <p>But, a follow-up question revealed some cracks. When asked what details were harder to remember, 57% fessed up to struggling to remember specific dates and duration of symptoms. 52% admitted they forgot the questions they intended to ask the doctor. And 43% struggled to describe how their symptoms had changed over time.</p>
-        <p><span class="boldIt">Market research to guide product design:</span> To understand the competition, I downloaded symptom-tracking and notepad apps. I found existing apps were designed around either one specific symptom (pain) or a specific cluster of medical conditions (such as digestive problems). There appeared to be a gap in the market for an app allowing the user to customize their symptom tracking, so this is where I started to build.</p>
 
-        <div class="overlayImg">
-          <img src="img/sym/signpost.svg" alt="" width="75">
-        </div>
+.introStudy {
+  padding-bottom: 1rem;
+  /* background-color: #cad4c5; */
+    background-color: #dce6d7;
+}
 
-        <h4>Wayfinding: creating, testing, and refining 2 paths</h4>
-        <p>Research directed us to personify 2 main types of users: an occasional and a frequent user based on her health concerns. User stories based on user research, paved the way to an app offering 2 pathways: basic and guided.</p>
+.introStudy p {
+  padding-bottom: 2rem;
+}
 
-      </section>
 
+.featureImg {
+  /* background: #cad4c5 url("/img/cydot1.svg") repeat-x bottom/100%; */
+  background: #dce6d7 url("/img/cydot1.svg") repeat-x bottom/100%;
+  background-blend-mode: multiply;
+}
 
-      <section class="artifactLinks">
-          <p>View </p>
-          <p class="projectLink"><a  href="https://drive.google.com/file/d/11q-zTr3LamYAgoo74C-czWwuCFveke43/view?usp=sharing" target="_blank"> Research documentation  &#62;</a></p>
-      </section>
+.featureImg img {
+  width: 32%;
+  padding-left: 2rem;
+}
 
+.featureImg img:first-of-type {
+    padding-left: 0;
+}
 
+.dotbackground {
+  background: url("/img/cydots.svg") ;
+  background-size: contain;
+  margin: 2rem 0;
+}
 
 
 
-      <section class="personas">
-        <div class="casualUser">
-          <img src="/img/sym/ellen.jpg" alt="">
+/* ----  grid structure  caseStudy  ---- */
 
-          <h4>Ellen <span class="smallCaps">an occasional user</span></h4>
+.studyBlock {
+  padding: 1rem 2.8rem 2rem 2.8rem;
+}
 
-          <p><span class="smallCaps">Motivation:</span> She likes to discuss health issues with doctor with details and facts. She would record <span class="boldIt">occasional</span> flare-ups or changes so that she can remember dates and contributing factors.</p>
-          <p><span class="smallCaps">Frustrations:</span> Not remembering dates or details. Not remembering suggetions made by doctor.</p>
-        </div>
-        <div class="chronicUser">
-          <img src="/img/sym/vikki.jpg" alt="">
-          <h4>Vicki <span class="smallCaps">a frequent user</span> </h4>
-          <p><span class="smallCaps">Motivation:</span> She's been suffering from <span class="boldIt">chronic, ongoing</span> issues which have led to hospital stays, specialists, medications, and tests. She wants a better system for keeping records.</p>
-          <p><span class="smallCaps">Frustrations:</span> Not knowing what details are valuable to record and not knowing how to describe what I'm feeling. Not remembering questions I wanted to ask doctor.</p>
-        </div>
-      </section>
+.studyBlock1 {
+  padding: 3rem 2.8rem 1rem 2.8rem;
+}
 
-      <section class="userquote hideMobile">
-        <p class="quote">Path 1: a basic notepad  for the occasional user with brief notes.</p>
-      </section>
 
-        <section class="userquote2 hideMobile">
-        <p class="quote">Path 2: a guided assessment  tool for someone with a complex or chronic condition, wanting more robust options and guidance on what to record.</p>
-      </section>
+.overlayImg {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    background: center no-repeat url("/img/cydot1.svg");
+  }
 
 
 
-      <section class="artifactsCollage">
-        <div class="shading">
-          <p class="quote hideDesktop">Path 1 is a basic notepad for the occasional user. Path 2 is a guided assessment tool for someone with a complex or chronic condition, wanting more robust options.</p>
-        </div>
-      </section>
+.artifactLinks {
+  display: flex;
+  padding-top: 0;
+}
 
+.artifactLinks p {
+  padding-right: 1rem;
+}
 
-<!-- moved visual design here -->
 
-    <section class="showSketches ">
 
-    </section>
+.whatIDid, .sidebar1, .sidebar2, .sidebar3, .sidebar4 {
+  background-color: rgba(182, 185, 169, 0.2);
+  /* background-blend-mode: multiply; */
+  z-index: 50;
+}
 
+.whatIDid ul {
+  padding-left: 0;
+}
 
-    <div class="overlayImg hideTablet">
-      <img src="img/sym/compass.svg" alt="" width="35">
-    </div>
 
+.artifactsCollage {
+  background-blend-mode: screen;
+  border-left: 1.4rem solid #df7d2e;
+  background: rgba(202, 212, 197, 0.7) url("/img/sym/pathfork.jpg") bottom center no-repeat;
+}
 
+.artifactsProgression1, .artifactsProgression2, .artifactsProgression3 {
+  margin-bottom: 2.5rem;
+}
 
-    <section class="studyBlock studyBlock3 ">
+.artifactsProgression2 p {
+  margin-bottom: 4rem;
+}
 
+.artifactsProgression3 p {
+  margin-bottom: 4rem;
+}
 
-        <div class="callout">
-          <p class="callout">Here, we're taking a slight detour to discuss the visual design decisions before refocusing on the successive usability tests that guided product refinement as we moved the prototype from low-fidelity to high-fidelity. Visual design decisions were made concurrently and implemented during the same timeframe we were conducting usability tests.</p>
-        </div>
+.artifactsProgression1 {
+   display: none;
+}
 
 
-        <h4>Visual Design: wilderness navigation as a guiding metaphor</h4>
 
-        <p>Knowing that illness can make a person feel lost in the woods, I found wilderness navigation, or orienteering, a helpful guiding metaphor during product development. So, when it came time to name the app and give it a visual identity, I kept heading in the same direction.</p>
+/* -------  typography  ------- */
 
-        <div class="hideDesktop">
-          <img src="img/sym/3buttonshoriz.svg" alt="3 iOS buttons to test" width="500" class="indent">
-        </div>
-        <p>Trying to communicate the uniqueness of a person’s experience of symptoms, I explored the similarities between a fingerprint and a topographic map. And, I sketched and tested other navigational symbols such as maps and compasses.</p>
-        <img src="img/sym/sevolution.svg" alt="" class="indent">
 
-        <p><span class="boldIt">In the end, the blending of a stethoscope-like shape with an orienteering path symbol to make an "S" ultimately performed best during preference testing as it reinforced both the product name and purpose.</span></p>
+h1 {
+  font-family: 'Rufina', serif;
+  font-weight: 400;
+  color: #505148;
+  font-size: 3.5rem;
+  line-height: 4.8rem;
+  margin-bottom: -4rem;
+}
 
-        <img src="/img/sym/faces.svg" alt="faces to help rate pain" width="400" class="indent">
-        <p>Other visual design decisions included creating friendly, understandable icons to assist with data collection on assessment screens, such as creating faces for the pain scale, based on accepted Wong-Baker FACES scale.</p>
-    </section>
+h2 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 4.8rem;
+  letter-spacing: -.03rem;
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
 
+h3 {
+  font-size: 2.8rem;
+  line-height: 2.6rem;
+}
 
-    <section class="styleguide centerIt hideMobile">
-      <img src="img/sym/SymPath_logo.svg" alt="SymPath logo" width="179">
-    </section>
+h3 span {
+  color: #df7d2e;
+  font-weight: 300;
+}
 
-    <section class="callout callout3">
-      <p>Now, we turn back to the refinement of the app's guided path, tracing the top 3 issues uncovered and addressed during the successive usability testing sessions.</p>
-    </section>
+h4 {
+  font-size: 2rem;
+  line-height: 2.6rem;
+}
 
+p, li {
+  line-height: 2.6rem;
+  margin-bottom: 1.4rem;
+}
 
-<!-- end of visual design -->
 
+.quote {
+  font-family: 'Rufina', serif;
+  font-size: 2.2rem;
+  line-height: 3.5rem;
+  padding: 3rem;
+}
 
+.shading {
+  background: rgba(255, 255, 255, 0.7);
+}
 
-      <section class="studyBlock studyBlock2b">
-        <div class="overlayImg">
-          <img src="img/sym/signpost.svg" alt="" width="75">
-        </div>
-        <h4>Usability testing: finding and removing roadblocks on path 2</h4>
-        <p>The design for the basic path, a simple notepad, was fairly smooth and performed well in usability testing.</p>
-        <p><span class="boldIt">User testing for path 2, the guided path, would reveal multiple times, that I needed to re-route the product design.</span> Following, are the roadblocks we encountered during successive rounds of usability testing as we moved from the low-fidelity to high-fidelity prototypes.</p>
-      </section>
 
+.boldIt {
+  font-weight: 600;
+}
 
 
-      <section class="roadblock">
-            <h4><span class="smallCaps">Roadblock 1</span> Too many options, too soon</h4>
-            <p><span class="boldIt">Early product design</span>—tested during low-fidelity prototype phase—expected users to understand a lot of information in order to customize the assessment, encouraging them to do this before having really used the product. This design proved doubly flawed as the assessment question relevance can change based on symptom selection.</p>
-            <p><span class="boldIt">Revised design:</span> Instead of asking user to understand terms and customize their experience, users are guided through all assessment pieces with a Next button allowing users to easily bypass screens. And for the curious, the explanations are inside the About section.</p>
-        </section>
+.sidebarTitle, .smallCaps {
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
 
 
-      <section class="artifactsProgression1">
+.underline-yellow {
+  border-bottom: 0.3rem solid #DFD24E;
+}
 
-        </section>
+.underline-orange {
+  border-bottom: 0.3rem solid #DF7D2E;
+}
 
+/* ------- add color to text ------- */
+.orange {
+  color: #DF7D2E;
+}
 
-        <section class="symscreen01 hideMobile">
-          <div class="bleedOff">
-            <img src="img/sym/SymPath_w01.svg" alt="low-fidelity mockup of settings screen" width="200">
-          </div>
+.callout p {
+  font-weight: 600;
+  color: #b05913;
+  padding-bottom: 0.8rem;
+}
 
-        </section>
+.credit {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  padding-top: 2rem;
+  color: rgb(182, 185, 169);
+}
 
-      <section class="symscreen01b centerIt hideDesktop">
-        <div class=" radius">
-          <img src="/img/sym/opqrstu.gif" alt="">
-        </div>
-        <div class="">
-            <p>Revised design</p>
-        </div>
-      </section>
 
-      <section class="roadblock1show hideMobile">
-        <img src="/img/sym/opqrstu.gif" alt="">
-      </section>
+/* -------  caseStudy specific  ------- */
 
+/* make li read as inline list with commas */
 
-      <section class="roadblock2">
-            <h4><span class="smallCaps">Roadblock 2</span> Path gets too steep</h4> 
-            <p><span class="boldIt">Initial product design</span> guided users to create daily journal entries populated with as many symptoms as they wished to track. During usability testing of both the low-fidelity and more refined high-fidelity prototypes, testers played right along, but additional usability testing revealed that this would lead to muddled data as assessment notes were not focused.</p>
-            <p><span class="boldIt">Revised design:</span> Instead of creating a journal entry for the day covering all symptoms, users now create separate symptom notes. Narrowing the scope of an entry enables better data collection and keeps assessment questions focused.</p>
-      </section>
+ul.sidebarList {
+  list-style: none;
+}
 
+ul.sidebarList li {
+  display: inline;
+}
 
-      <section class="symscreen02b centerIt hideDesktop">
-        <div class="radius">
-          <img src="/img/sym/simplifys.gif" alt="" width="300">
-        </div>
-        <div class="">
-            <p>Revised design</p>
-        </div>
-      </section>
+ul.sidebarList li.sidebarTitle::after {
+  content: ": ";
+}
 
-      <section class="artifactsProgression2 hideMobile">
+ul.sidebarList li::after {
+  content: ", ";
+}
 
-      </section>
+ul.sidebarList li:last-child::after {
+  content: "";
+}
 
+.numbering {
+  display: none;
+}
 
-      <section class="roadblock2show hideMobile">
-        <img src="/img/sym/simplifys.gif" alt="">
-      </section>
+/* -------  links ------- */
 
+.projectLink a {
+  color: #135E80;
+}
 
-      <section class="roadblock3">
-            <h4><span class="smallCaps">Roadblock 3</span> Trailhead needs improvement</h4> 
-            <p><span class="boldIt">AKA, Onboarding.</span> During each usability testing session, I also  assessed the effectiveness of the onboarding screens to educate the user on the difference between the 2 paths. I trimmed and rewrote the text to be as direct as possible. I created icons to illustrate the added dimensions offered in the guided path, and finally, found the added animated screens most successful. </p>
-      </section>
+a {
+  text-decoration: none;
+}
 
-      <section class="symscreen03b centerIt hideDesktop">
-        <div class="radius">
-          <img src="/img/sym/onboard01s.gif" alt="" width="300">
-        </div>
-        <div class="">
-            <p>Revised design</p>
-        </div>
-      </section>
+a:hover {
+  color: #135E80;
+}
 
-      <section class="artifactsProgression3 ">
-        <div class="hideMobile">
-          <img src="img/sym/SymPath_o01.svg" alt="low-fidelity mockup of settings screen" width="200">
-        </div>
+a:visited {
+  color: DF7D2E;
+}
 
-        <div class="hideMobile">
-          <img src="img/sym/SymPath_o02.svg" alt="low-fidelity mockup of settings screen" width="200">
-        </div>
+footer p a {
+  color: #505148;
+  border-bottom: 0.05rem solid #505148;
+}
 
-        <div class="hideMobile">
-          <img src="img/sym/SymPath_o03.svg" alt="low-fidelity mockup of settings screen" width="200">
-        </div>
+footer p {
+  margin-bottom: 3rem;
+}
 
-        <div class="hideMobile">
-          <img src="img/sym/SymPath_o04.svg" alt="low-fidelity mockup of settings screen" width="200">
-        </div>
 
-      </section>
+/* ----  appearance  ---- */
 
+img {
+  max-width: 100%;
+}
 
-    <section class="roadblock3show hideMobile">
-      <img src="/img/sym/onboard01s.gif" alt="">
-    </section>
+.roadblock3show img, .roadblock2show img, .roadblock1show img {
+  border-radius: 40px;
+}
 
 
+.personas {
+  background: rgba(182, 185, 169, 0.3);
+}
 
-    <section class="showScreens hideMobile">
-      <img src="img/sym/screens.jpg" alt="view of many SymPath prototype screens">
-    </section>
+.personas img {
+  border-radius: 50%;
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.personas h4 {
+  text-align: center;
+}
 
 
-      <section class="viewIt centerIt dotbackground" style="height: 6rem;">
-      </section>
+a.button {
+  border: 0.05rem solid #fff;
+  padding: 2rem 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  background-color: inherit;
+  color: #505148;
+}
 
-      <section class="studyBlock studyBlock4">
-        <h3><span>04</span> What I learned</h3>
-        <p><span class="boldIt">Get to the point.</span> Hitting the right amount of detail on onboarding screens takes work. During usability testing, I repeatedly observed testers resist reading even brief text that would help them better understand the product. To make onboarding as successful as possible, I wrote and re-wrote the introductory text and added icons to help communicate the difference between the 2 paths. In the end, animating some app screens combined with the refined, brief text, proved most successful in shaping a user’s understanding of the 2 pathways.</p>
-        <p><span class="boldIt">Ask questions that reveal reality.</span> In talking with people during the initial survey and later usability testing, I aimed to ask questions that enabled me to understand their life as they experienced it. I wanted to learn about their actions and their habits, rather than their opinions. I found “The Mom Test: How to talk to customers and learn if your business is a good idea when everyone is lying to you” by Rob Fitzpatrick an excellent guide.</p>
-        <p><span class="boldIt">Usability testing pays off.</span> Nothing beats a user reaction to confirm that the work was worth it. "I would have loved to have had something like this after my car accident. I tried to write everything down but it got hard after a while to remember and document everything."</p>
-      </section>
+a.button2 {
+  border: 0.05rem solid #505148;
+  padding: 2rem 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  background-color: inherit;
+  color: #505148;
+  margin-top: 2rem;
+}
 
+a.button:hover {
+  background-color: #135e80;
+  border: 0.05rem solid #135e80;
+  color: #fff;
+}
 
+a.button2:hover {
+  background-color: rgba(182, 185, 169, 0.2);
+  border: 0.05rem solid #fff;
+}
 
+.centerIt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  <!-- Footer -->
-      <footer class="full">
-        <div class="">
-          <p>Learn more <a href="about.html">about</a> me or <a href="contact.html">contact</a> me.</p>
-        </div>
+.overlap {
+  background: url("/img/mindmap.svg") no-repeat 0% 0%;
+  background-size: contain;
+  padding-top: 30rem;
+  margin-top: -6rem;
+}
 
-        <div class="extrame">
-          <div class="">
-            <!-- Social Media icons  -->
-            <a href="https://github.com/seewhydesign" target="_blank"><i class="fab fa-github-square" alt="icon for Github"></i></a>
-            <a href="https://www.instagram.com/seewhydesign/" target="_blank"><i class="fab fa-instagram" alt="icon for Instagram"></i></a>
-            <a href="https://www.linkedin.com/in/cyoungdesign/" target="_blank"><i class="fab fa-linkedin" alt="icon for LinkedIn"></i></a>
-          </div>
+.indent {
+  padding-top: 2rem;
+}
 
-          <div class="">
-            <p class="credit">Cindy Young, 2025. All Rights Reserved.</p>
-          </div>
-        </div>
-      </footer>
 
-    </div>
-  </body>
-</html>
+.hideMobile {
+  display: none;
+}
+
+
+
+
+
+/* ---- media query tablet  ---- */
+
+@media screen and (min-width: 768px) {
+
+  body {
+    background-color: rgba(182, 185, 169, 1);
+  }
+
+  .hideTablet {
+    display: none;
+  }
+
+  .gridContainerStudy {
+    background-color: #fff;
+    margin: 1% auto;
+    overflow: hidden;
+  }
+
+  section, .studyBlock, .whatIDid  {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .introStudy {
+    background: #cad4c5 url("") ;
+    background: #dce6d7 url("") ;  
+  }
+
+  .introStudy p:first-child:first-letter {
+    float: left;
+    font-size: 6rem;
+    line-height: 4rem;
+    padding-top: 1.1rem;
+    padding-right: 0.5rem;
+  }
+
+
+.personas  {
+  display: flex;
+  align-content: space-around;
+}
+
+.personas div {
+  padding: 1rem 3rem;
+  border-left: 1px solid white;
+}
+
+  .personas img {
+    width: 35%;
+    margin: 1rem;
+  }
+
+  .personas h4 {
+    text-align: left;
+  }
+
+
+  .quote {
+    padding-left: 13%;
+    padding-right: 15%;
+  }
+
+
+  .studyBlock4 {
+    padding-bottom: 7rem;
+  }
+
+
+  .sidebar4 {
+    padding-bottom: 8rem;
+  }
+
+  .symscreen01b img {
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+  .extrame {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .credit {
+    text-align: right;
+    padding-top: 0;
+  }
+
+
+}
+
+
+
+
+
+/* ---- media query laptop  ---- */
+
+@media screen and (min-width: 1224px) {
+
+  .gridContainerStudy {
+    display: grid;
+    /* background-color: #cad4c5; */
+    background-color: #dce6d7;
+    grid-template-columns: minmax(3.10457516%, auto) repeat(12, [row] 77px) minmax(3.10457516%, auto);
+    grid-column-gap: 1.38888%;
+    grid-template-rows: repeat(auto, [row] auto);
+    margin: 1% auto;
+    overflow: hidden;
+    max-width: 98%;
+  }
+
+
+  nav {
+    grid-column: 1 / 15;
+    grid-row: 1;
+  }
+
+  .projectNav {
+    padding-right: 20rem;
+  }
+
+  .mymark a {
+    margin-left: 3rem;
+  }
+
+  .myname {
+    color: rgba(80, 81, 72, 0.8);
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 18;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    padding: 4rem 4rem 0 4rem;
+    position: fixed;
+    z-index: 150;
+  }
+
+  .myname div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+
+
+    .myname p {
+    margin-bottom: 4rem;
+  }
+
+    .hideDesktop {
+      display: none;
+    }
+
+    .hideMobile {
+      display: grid;
+    }
+
+
+ .mynavDesktop {
+    display: flex;
+    grid-column: 10 / 15;
+    justify-content: flex-end;
+    padding-top: 4rem;
+    padding-right: 4rem;
+    grid-row: 1;
+    z-index: 600;
+  }
+    
+    
+
+  section {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+  }
+
+
+  h2 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  h3 {
+    font-size: 3.6rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  .studyBlock p {
+    padding-left: 15%;
+  }
+
+
+  .studyBlock ol {
+    padding-left: 20%;
+  }
+
+  .hero {
+    grid-column: 3 / 11;
+    grid-row: 1;
+    padding-top: 20rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .introStudy {
+    grid-column: 5 / 12;
+    grid-row: 2 / 2;
+    font-size: 1.7rem;
+    padding: 0 3rem 8rem 0;
+  }
+
+  .introStudy p {
+    line-height: 3rem;
+  }
+
+
+  .whatIDid {
+    grid-column: 12 / 14;
+    grid-row: 1 / 4;
+    background-color: inherit;
+    padding-top: 30rem;
+  }
+
+    /* stop li reading as inline list with commas */
+
+    ul.sidebarList {
+      list-style: none;
+      font-size: 1.3rem;
+      padding: 0;
+      margin: 0 0 2rem 0;
+    }
+
+    ul.sidebarList li {
+      display: block;
+      line-height: 2.1rem;
+    }
+
+    ul.sidebarList li.sidebarTitle::after {
+      content: none;
+    }
+
+    ul.sidebarList li::after {
+      content: none;
+    }
+
+    .sidebarTitle {
+      font-weight: 600;
+    }
+
+    .whatIDid li {
+      margin-bottom: 0;
+    }
+
+    .heroCollage {
+      display: grid;
+      grid-column: 6 / 10;
+      grid-row: 3 / 5;
+      margin-top: -6rem;
+      z-index: 30;
+      filter: drop-shadow(0 0 0.2rem rgba(182, 185, 169, 0.8));
+    }
+
+    .heroCollage2 {
+      display: grid;
+      grid-column: 3 / 7;
+      grid-row: 3 / 5;
+      margin-left: 4rem;
+      margin-top: -3rem;
+      z-index: 40;
+    }
+
+    .buttonDesktop {
+      display: flex;
+      grid-column: 10 / 13;
+      grid-row: 4;
+      align-items: flex-end;
+      /* padding: 0 0 8rem 0rem; */
+      z-index: 100;
+    }
+
+    .heroCollage3 {
+      display: grid;
+      grid-column: 9 / 12;
+      grid-row: 3 / 5;
+      filter: drop-shadow(0 0 0.2rem rgba(182, 185, 169, 0.8));
+    }
+
+
+    .wrapWhite {
+      display: grid;
+      grid-column: 1 / 15;
+      grid-row: 4 / 25;
+      background-color: #fff;
+    }
+
+    .studyBlock, .studyBlock1, .studyBlock2, studyBlock2b, .studyBlock3, .studyBlock4 {
+      padding: 0;
+    }
+
+    .studyBlock1 {
+      grid-column: 4 / 11;
+      grid-row: 5;
+      padding-top: 3rem;
+    }
+
+    .studyBlock2 {
+      grid-column: 4 / 11;
+      grid-row: 6;
+      padding-bottom: 6rem;
+      /* padding-bottom: 4rem; */
+    }
+
+  .overlayImg {
+      justify-content: center;
+      padding-left: 13%;
+    }
+
+
+
+
+    .artifactLinks {
+      flex-direction: column;
+      grid-column: 11 / 14;
+      grid-row: 6;
+      align-self: flex-end;
+      background-color: rgba(202, 212, 197, 0.15);
+      padding-top: 1rem;
+      padding-bottom: 5rem;
+      z-index: 120;
+      border-right: 1rem solid #df7d2e;
+    }
+
+  .artifactLinks div {
+  }
+
+    .artifactLinks p {
+      line-height: 0.3rem;
+      padding-left: 1.5rem;
+    }
+
+    .sidebar1 {
+      grid-column: 11 / 14;
+      grid-row: 6;
+      padding: 3rem 1.5rem;
+      margin-bottom: 90rem;
+    }
+
+    .callout {
+      padding: 1rem 0;
+    }
+
+
+    .personas {
+      display: flex;
+      grid-column: 4 / 14;
+      grid-row: 7;
+      background-color: rgba(255, 255, 255, 0);
+    }
+
+    .personas img {
+      width: 35%;
+      margin: 0;
+    }
+
+
+    .personas h4 {
+      text-align: left;
+    }
+
+    .personas .casualUser {
+      display: inline;
+      padding: 5rem 0 0 10rem;
+      border-left: 0;
+    }
+
+    .personas .chronicUser {
+      display: inline;
+      padding: 5rem 20rem 6rem 5rem;
+      margin-left: 4rem;
+      background-color: rgba(202, 212, 197, 0.4);
+      border-right: 1rem solid #df7d2e;
+      border-left: 0;
+    }
+
+
+    .userquote .quote {
+      padding: 0 28% 0 2rem;
+    }
+
+    .userquote2 {
+      display: grid;
+      grid-column: 8 / 14;
+      grid-row: 8 / 9;
+      border-right: 1rem solid #df7d2e;
+      margin-left: 3.4rem;
+      background-image: linear-gradient(
+      to bottom,
+      rgba(202, 212, 197, 1), rgba(202, 212, 197, 0.6));
+      z-index: 60;
+    }
+
+    .userquote2 p {
+      padding-left: 5rem;
+    }
+
+    .userquote {
+      display: grid;
+      grid-column: 4 / 9;
+      grid-row: 8;
+      margin-left: 6rem;
+      margin-right: 4rem;
+      height: 30rem;
+      padding-left: 1.8rem;
+      background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+      padding-top: 4rem;
+      z-index: 60;
+    }
+
+
+
+
+    .artifactsCollage {
+      grid-column: 1 / 15;
+      grid-row: 8;
+      height: 30rem;
+      background-color: rgba(202, 212, 197, 0.8);
+      background-size: 100%;
+      border-left: 0;
+    }
+
+
+
+  .studyBlock2b {
+    grid-column: 4 / 11;
+    grid-row: 11;
+    padding-bottom: 4rem;
+    padding-top: 3rem;
+  }
+
+
+    .artifactsProgression1 {
+      display: flex;
+      color: #fff;
+      grid-column: 1 / 15;
+      grid-row: 12;
+      padding: 4rem 0 0 15rem;
+      background: #1F6BA6 url("/img/sym/sketchSCREENS.svg") bottom -26rem left 3rem/1000px no-repeat;
+      background-blend-mode: multiply;
+    }
+
+    .symscreen01 {
+      display: flex;
+      grid-column: 2 / 6;
+      grid-row: 11 / 14;
+      margin-top: 38rem;
+      padding-left: 4rem;
+      z-index: 30;
+      color: white;
+      background-color: rgba(255, 255, 255, 0);
+    }
+
+
+    .symscreen01 img {
+      filter: drop-shadow(0 0 0.2rem rgba(182, 185, 169, 0.8));
+    }
+
+
+    .roadblock {
+      color: #fff;
+      grid-column: 5 / 10;
+      grid-row: 12;
+      z-index: 10;
+      padding-top: 3rem;
+      background-color: rgba(255, 255, 255, 0);
+    }
+
+  .roadblock1show {
+    display: grid;
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+    grid-column: 11 / 14;
+    grid-row: 12;
+  }
+
+
+  .artifactsProgression1 .bleedOff {
+    margin-bottom: -30rem;
+  }
+
+
+  .roadblock2 {
+    grid-column: 5 / 10;
+    grid-row: 13;
+    z-index: 10;
+    padding-top: 6rem;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .roadblock2 h4, .roadblock3 h4 {
+    padding: 0;
+    margin: 0;
+  }
+
+
+    .artifactsProgression2 {
+      display: inline;
+      grid-column: 1 / 15;
+      grid-row: 13;
+      padding: 30rem 0 10rem 10rem;
+      /* background:  url("/img/sym/SymPath_d01.jpg") bottom 6rem left -4rem/1200px no-repeat, #CAD4C5; */
+        background:  url("/img/sym/SymPath_d01.jpg") bottom 6rem left -4rem/1200px no-repeat, #dce6d7;
+        
+      background-blend-mode: multiply;
+    }
+
+    .roadblock2show {
+      display: grid;
+      padding-top: 10rem;
+      padding-bottom: 28rem;
+      grid-column: 11 / 14;
+      grid-row: 13;
+    }
+
+    .artifactsProgression1 div,  .artifactsProgression3 div {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      padding-right: 2rem;
+    }
+
+
+    .roadblock3 {
+      color: #fff;
+      grid-column: 5 / 10;
+      grid-row: 14;
+      z-index: 10;
+      padding-top: 55rem;
+      background-color: rgba(255, 255, 255, 0);
+    }
+
+
+    .artifactsProgression3 {
+      display: flex;
+      grid-column: 1 / 15;
+      grid-row: 14;
+      color: #fff;
+      padding: 6rem 0 38rem 0;
+      margin-left: -8rem;
+      background: #1F6BA6;
+    }
+
+
+    .roadblock3show {
+      display: grid;
+      padding-top: 17rem;
+      padding-bottom: 6rem;
+      grid-column: 11 / 14;
+      grid-row: 14;
+    }
+
+    .desktopSidebar div, .sidebar3 div, .sidebar4 div {
+      width: 250px;
+    }
+
+
+    .showSketches {
+      display: grid;
+      grid-column: 11 / 15;
+      grid-row: 9 / 12;
+      background: top 20rem left 118px  / 130px no-repeat url("/img/sym/3buttons.svg"), right 70px / 250px repeat-y url("/img/sym/fingerprints.svg"); */
+    }
+
+
+    .studyBlock3 {
+      grid-column: 4 / 11;
+      grid-row: 9;
+      padding-top: 3rem;
+    }
+
+    .styleguide {
+      grid-column: 2 / 5;
+      grid-row: 9 / 11;
+      padding-top: 70rem;
+      padding-left: 5rem;
+    }
+
+  .indent {
+    padding-left: 10rem;
+  }
+
+    .callout3 {
+      grid-column: 5 / 11;
+      grid-row: 10;
+    }
+
+    .sidebar4 {
+      grid-column: 11 / 15;
+      grid-row: 17;
+      padding: 11rem 1.5rem;
+    }
+
+    .showTheWork {
+      display: grid;
+      grid-column: 2 / 11;
+      grid-row: 17;
+    }
+
+    .moveUp {
+      margin-top: -7rem;
+    }
+
+    .topLayer {
+      z-index: 120;
+    }
+
+    .numberingOrange  {
+      color: #DF7D2E;
+      font-size: 6rem;
+      text-align: right;
+      z-index: 80;
+    }
+
+    .showScreens {
+      grid-column: 1 / 15;
+      grid-row: 18;
+    }
+
+    .viewIt {
+      grid-column: 1 / 15;
+      grid-row: 19;
+    }
+
+  
+    .dotbackground {
+      background-repeat: repeat;
+      background-size: 24%;
+    }
+
+    .featureImgSketch {
+      display: grid;
+      padding-top: 8rem;
+      width: 100px;
+    }
+
+    .studyBlock4 {
+      grid-column: 4 / 11;
+      grid-row: 20;
+      padding: 3rem 0 7rem 0;
+    }
+
+
+    footer {
+      background-size: 50%;
+      grid-column: 1 / 15;
+      grid-row: 21;
+      padding: 4rem 11rem;
+    }
+
+
+  }
+
+
+/* ---- media query desktop  ---- */
+
+@media screen and (min-width: 1440px) {
+
+  .gridContainerStudy {
+    display: grid;
+    /* background-color: #cad4c5; */
+    background-color: #dce6d7;
+    grid-template-columns: minmax(8.888888%, auto) repeat(12, [row] 77px) minmax(8.888888%, auto);
+    grid-column-gap: 1.38888%;
+    grid-template-rows: repeat(auto, [row] auto);
+    margin: 1% auto;
+    overflow: hidden;
+    max-width: 98%;
+  }
+
+}
+
+
+
+
+/* colors
+blue: #135E80
+yellow: #DFD24E
+orange: #DF7D2E > #b05913
+grey solid: #505148
+grey footer: rgba(182, 185, 169, 0.2)
+*/
+
