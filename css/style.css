@@ -26,7 +26,7 @@ nav {
 nav div {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 
 
@@ -34,22 +34,75 @@ nav div {
   padding: 2.8rem;
 }
 
-.mynav li, .mynavDesktop li {
+
+.mynav li, .mynavDesktop li, .mynavDesktop div button, .mynavDesktop div a, .mynav div button, .mynav div a {
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   list-style-type: none;
-  padding-top: 1.6rem;
+  padding-top: 1.8rem;
   padding-left: 1.8rem;
+    /* padding:1.8rem; */
+}
+.mynav div button, .mynavDesktop div button {
+    padding-right: 1.8rem;
+    padding-bottom: 1.8rem;
 }
 
-.mynav a, .mynavDesktop a {
-  color: #4285a4;
+.mynav button, .mynavDesktop button {
+    border:0;
 }
 
-.mynav a:hover {
-  color: rgba(182, 185, 169, 0.8);
+
+.mynav a, .mynavDesktop a, .myname a {
+  /* color: rgba(80, 81, 72, 0.5); */
+    color: #505148;
 }
+
+.mynav a:hover, .mynavDesktop a:hover {
+  color: #135E83;
+}
+
+/* Dropdown Button  ----- update nav Dec 2025*/
+
+
+/* The container <div> - needed to position the dropdown content */
+.mynav .dropdow, .mynavDesktop .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.mynav .dropdown-content, .mynavDesktop .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.mynav .dropdown-content a, .mynavDesktop .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #135E83;
+    color: white;
+    }
+    
+     /* Dropdown Button  ----- end update nav Dec 2025*/
 
 
 .gridContainer {
@@ -84,9 +137,16 @@ section {
 }
 
 .featureImg02b  {
-    height: 40rem;
+    height: 22rem;
   margin: 2rem 0 3rem 0;
-  background: #DFD24E url("/img/fw/fw_home.jpg") no-repeat center 6rem / 60%;
+  background: #DFD24E url("/img/fw/fw_home.jpg") no-repeat center 3rem / 60%;
+}
+
+.featureImg03b  {
+    height: 22rem;
+  margin: 2rem 0 3rem 0;
+    background: rgba(182, 185, 169, 0.3)
+    center / cover no-repeat url("https://youngdesign.biz/img/gallery3.jpg");
 }
 
 
@@ -221,7 +281,7 @@ p, li {
 /* -------  links ------- */
 
 .projectLink a {
-  color: #DF7D2E;
+  color: #b05913;
 }
 
 a {
@@ -371,7 +431,7 @@ img {
     padding-bottom: 3rem;
   }
 
-  .mynavDesktop {
+ .mynavDesktop {
     display: grid;
     grid-column: 10 / 15;
     justify-content: flex-end;
@@ -379,14 +439,27 @@ img {
     grid-row: 1;
     z-index: 600;
   }
+    
+       .hideDesktop {
+      display: none;
+    }
 
-  .hideMobile {
-    display: grid;
-  }
+    .hideMobile {
+      display: grid;
+    }
 
-  .hideDesktop {
-    display: none;
+
+ .mynavDesktop {
+    display: flex;
+    grid-column: 10 / 15;
+    justify-content: flex-end;
+    padding-top: 4rem;
+    padding-right: 4rem;
+    grid-row: 1;
+    z-index: 600;
   }
+    
+   
 
   section {
     padding: 0;
@@ -442,7 +515,7 @@ img {
   .featureText2 {
     grid-column: 10 / 13;
     grid-row: 3;
-    padding-top: 19rem;
+    padding-top: 10rem;
   }
 
   .featureImg2 {
@@ -464,7 +537,7 @@ img {
     margin-top: 5rem;
     margin-bottom: 7rem;
     background: rgba(182, 185, 169, 0.3)
-    center 25px / 400px no-repeat;
+    center / cover no-repeat url("https://youngdesign.biz/img/gallery3.jpg");
     }
 
   .galleryImg {
@@ -476,13 +549,12 @@ img {
     width: 70%;
     margin: 3% 15%;
   }
-
-
-
+    
+   
   .galleryText {
     grid-column: 10 / 14;
     grid-row: 4;
-    padding-top: 8rem;
+    padding-top: 10rem;
   }
 
 
