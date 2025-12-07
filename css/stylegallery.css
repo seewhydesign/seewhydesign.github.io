@@ -310,12 +310,12 @@ p, li {
 
 /* ------- add color to text ------- */
 .orange {
-  color: #DF7D2E;
+  color: #b05913;
 }
 
 .callout p {
   font-weight: 600;
-  color: #DF7D2E;
+  color: #b05913;
   padding-bottom: 0.8rem;
 }
 
@@ -955,4 +955,3 @@ orange: #DF7D2E
 grey solid: #505148
 grey footer: rgba(182, 185, 169, 0.2)
 */
-
