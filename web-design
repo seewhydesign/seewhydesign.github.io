@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cindy Young Design Gallery</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styleWebGallery.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Rufina" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  </head>
+
+  <body>
+
+    <div class="gridContainerStudy">
+
+      <nav class="nav01">
+        <div class="mymark hideDesktop">
+          <div class="">
+            <a href="index.html"><img class="logo" src="img/SeeWhyLogo90.svg" alt="Cindy Young C maze logo rotated 90 degrees" width="45.5"></a>
+          </div>
+        
+          <div class="mynav hideDesktop">
+            <div class="dropdown">
+              <button class="dropbtn">Work</button>
+              <div class="dropdown-content">
+                <a href="/sympath.html">SymPath</a>
+                <a href="/filewell.html">FileWell</a>
+                <a href="/gallery.html">Gallery</a>
+              </div>
+            </div>              
+            <div><a href="about.html">About</a></div>
+            <!-- <div><a href="contact.html">Contact</a></div> -->
+
+          </div>
+        </div>
+
+        <div class="myname hideMobile">
+          <div class="">
+            <a href="index.html"><img class="logo" src="img/SeeWhyLogo90W.svg" alt="Cindy Young C maze logo rotated 90 degrees" width="45.5"></a>
+          </div>
+          <div class="">
+            <p style="writing-mode: vertical-rl; text-shadow: 2px 2px #fff;">Cindy Young Design</p>
+            <!-- <p style="writing-mode: vertical-rl"><a href="filewell.html">•  Additional work  •</a></p> -->
+          </div>
+        </div>
+
+      </nav>
+
+       <div class="mynavDesktop hideMobile">
+            
+            <div class="dropdown">
+              <button class="dropbtn">Work</button>
+              <div class="dropdown-content">
+                <a href="/sympath.html">Sympath</a>
+                <a href="/filewell.html">FileWell</a>
+                <a href="/gallery.html">Gallery</a>
+              </div>
+            </div>              
+            <div><a href="about.html">About</a></div>
+            <div><a href="contact.html">Contact</a></div>
+
+        </div>
+        
+   
+      <section class="hero casestudy">
+        <p><span class="smallCaps underline-yellow">UNOS</span></p>
+        <h1 class="casestudyText">Web design</h1>
+      </section>
+
+
+      <section class="introStudy">
+        <div class="">
+          <p>A journal of things learned and designed while serving as the primary caretaker for content-heavy website. </p>
+        </div>
+      </section>
+
+
+      <section class="featureImg hideDesktop centerIt">
+        <img src="https://youngdesign.biz/img/webdesign/rethinking-homepage.jpg" alt="Prototype view rethinking homepage" >
+      </section>
+
+
+      <section class="whatIDid">
+        <ul class="sidebarList">
+          <li class="sidebarTitle">My roles</li>
+          <li>User research</li>
+          <li>Information architecture</li>
+        <li>Prototyping</li>
+        </ul>
+        <ul class="sidebarList">
+          <li class="sidebarTitle">Tools used</li>
+            <li>HTML/CSS</li>
+            <li>Adobe XD</li>
+            <li>Adobe Photoshop</li>
+            <li>Adobe Illustrator</li>
+        </ul>
+      </section>
+
+
+      <section class="heroCollage hideMobile">    
+          <img src="https://youngdesign.biz/img/webdesign/rethinking-homepage.jpg" alt="Prototype view rethinking homepage" width="700">
+          
+      </section>
+
+
+      <!-- <section class="heroCollage3 hideMobile">
+        <img src="https://youngdesign.biz/img/webdesign/website-prototype-redesign.png" alt="Five versions of prototype work" width="700">
+      </section> -->
+
+
+    <!-- to wrap sections in white -->
+
+      <section class="wrapWhite hideMobile">
+      </section>
+
+
+      <section class="callout callout1">
+        <div class="caretUp">
+          <img src="img/caretUp.svg" alt="triangle pointing up" width="18">
+        </div>
+          <p>During my years as a ux / web designer, I continously worked to care for and curate the experience for the diverse groups of people visiting the site.</p>
+          <p>The site needed to support the needs for both the technical medical professionals and their patients and family members. We also needed to consider the media, the general public, and policy.</p>
+          
+          <h2 style="padding-top:4rem;">Back to basics: rethinking the homepage</h2>
+
+        <!-- <div class="caretDown">
+          <img src="img/caretDown.svg" alt="triangle pointing down" width="18">
+        </div> -->
+      </section>
+
+        
+      <section class="studyBlock studyBlock1">
+          <p>Before the redesign</p>
+              <img src="https://youngdesign.biz/img/webdesign/homepage-before-blue.jpg" alt="Before view of homepage" width="240">
+        </section>
+          
+          <!-- <img src="https://youngdesign.biz/img/webdesign/website-prototype-redesign.png" alt="Five versions of prototype work" width="700"> -->
+   
+          <section class="redesign-text">
+            <h3>Feeling lost</h3>
+            <p>Site visitors reported problems locating what they hoped to find.</p>
+            <p>Conducting user interviews and usability sessions, we discovered multiple issues to address.</p> 
+              <p>A lengthy homepage packed with technical, scientific news articles, while needed by transplant professionals, confused or frustrated the many patients and general public visitors.</p>
+              <p>The navigation, which was heavily used by site visitors, didn't have groupings that made sense to all audiences.</p>
+          </section>
+        
+         <section class="redesign-prototype hideMobile">
+            <img src="https://youngdesign.biz/img/webdesign/website-prototype-redesign.png" alt="Five versions of prototype work" width="700">
+        </section>
+                  
+      
+      <section class="after-homepage">
+         <p>After the redesign</p>
+            <img src="https://youngdesign.biz/img/webdesign/redesign-after-home.jpg" alt="" width="600">
+          </section>
+        
+        <section class="redesign-after-text">
+            <h3>Welcoming and helpful</h3>
+            <p>The navigation now reflects the key audience segments and offers direct links to the content they most frequently visit.</p>
+            <p>Key messages about the non-profit's purpose and aims were featured in the hero area to help grow understanding across audiences.</p>
+            <p>Based on both analytics and usability sessions, I shortened the homepage length and helped develop guidance on </p> 
+            <p>Those needed technical, scientific news items were housed in a redesigned news section specifically for donation and transplant professionals.</p>
+              
+        </section>
+
+       
+       <!-- <section class="callout callout2">
+         <h3>Book design</h3>
+
+         <div class="caretDown">
+           <img src="img/caretDown.svg" alt="triangle pointing down" width="18">
+         </div>
+       </section> -->
+
+
+      <section class="work-in-progress">
+          <p>Up next: Redesigning the stories of hope. <em>Work in progress.</em></p>
+        
+        </section>
+
+
+
+  <!-- Footer -->
+      <footer class="full">
+        <div class="">
+          <p>Learn more <a href="about.html">about</a> me or <a href="contact.html">contact</a> me.</p>
+        </div>
+
+        <div class="extrame">
+          <div class="">
+            <!-- Social Media icons  -->
+            <a href="https://github.com/seewhydesign" target="_blank"><i class="fab fa-github-square" alt="icon for Github"></i></a>
+            <a href="https://www.instagram.com/seewhydesign/" target="_blank"><i class="fab fa-instagram" alt="icon for Instagram"></i></a>
+            <a href="https://www.linkedin.com/in/cyoungdesign/" target="_blank"><i class="fab fa-linkedin" alt="icon for LinkedIn"></i></a>
+          </div>
+
+          <div class="">
+            <p class="credit">Cindy Young, 2025. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </body>
+</html>
