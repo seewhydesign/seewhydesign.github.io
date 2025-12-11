@@ -29,11 +29,9 @@ nav div {
   /* align-items: center; */
 }
 
-
 .mymark {
   padding: 2.8rem;
 }
-
 
 .mynav li, .mynavDesktop li, .mynavDesktop div button, .mynavDesktop div a, .mynav div button, .mynav div a {
   display: inline-block;
@@ -51,6 +49,7 @@ nav div {
 
 .mynav button, .mynavDesktop button {
     border:0;
+    color: #000000;
 }
 
 
