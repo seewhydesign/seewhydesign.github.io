@@ -45,7 +45,6 @@ nav div {
   padding-top: 1.8rem;
   padding-left: 1.8rem;
 }
-.mynav .dropdown-content { margin-top:5.4rem }
 
 .mynav div button, .mynavDesktop div button {
     padding-right: 1.8rem;
@@ -70,7 +69,7 @@ nav div {
 
 
 /* The container <div> - needed to position the dropdown content */
-.mynav .dropdow, .mynavDesktop .dropdown {
+.mynav .dropdown, .mynavDesktop .dropdown {
   position: relative;
   display: inline-block;
 }
