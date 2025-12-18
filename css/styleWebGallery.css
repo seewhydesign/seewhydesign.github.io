@@ -195,32 +195,10 @@ footer .fab:hover {
   padding: 2.8rem 0;
 }
 
+  .stories-hope-section, .stories-title, .stories-redesign-text, .stories-before, .stories-after, .stories-after-feature, .stories-after-standard {
+    background-color: #e8e9e5;
+    }
 
-.artifactsCollage {
-  background-blend-mode: multiply;
-  border-left: 1.4rem solid #DFD24E;
-  background: rgba(182, 185, 169, 0.7) url("/img/sketchFW.jpg") no-repeat 0% 100%;
-  background-size: 100%;
-  background-position: bottom;
-}
-
-.artifactsProgression1, .artifactsProgression2, .artifactsProgression3 {
-  background-color: #DFD24E;
-  color: #636458;
-  margin-bottom: 2.5rem;
-}
-
-.artifactsProgression2 p {
-  margin-bottom: 4rem;
-}
-
-.artifactsProgression3 p {
-  margin-bottom: 4rem;
-}
-
-.artifactsProgression1 {
-   display: none;
-}
 
 
 
@@ -389,81 +367,6 @@ img {
 }
 
 
-a.button {
-  border: 0.1rem solid #fff;
-  padding: 2rem 4rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  background-color: inherit;
-  color: #505148;
-}
-
-a.button2 {
-  border: 0.1rem solid #505148;
-  padding: 2rem 4rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  background-color: inherit;
-  color: #505148;
-  margin-top: 2rem;
-}
-
-a.button:hover {
-  background-color: #c5b725;
-  border: 0.1rem solid #DFD24E;
-  color: #fff;
-}
-
-a.button2:hover {
-  background-color: rgba(182, 185, 169, 0.2);
-  border: 0.1rem solid #fff;
-}
-
-.centerIt {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.overlap {
-  background: url("/img/mindmap.svg") no-repeat 0% 0%;
-  background-size: contain;
-  padding-top: 30rem;
-  margin-top: -6rem;
-}
-
-figure.top-crop {
-  overflow: hidden;
-  margin-left: -5rem;
-  width: 120%;
-  max-width: 905px;
-}
-
-figure.top-crop img {
-  display: block;
-  width: 100%;
-  margin:-13.6% 0 2% 0;
-}
-
-figure.bottom-side-crop {
-  overflow: hidden;
-  margin-left: -12.6rem;
-  width: 185%;
-}
-
-figure.bottom-side-crop img {
-  display: block;
-  width: 100%;
-  margin:0 20% -18% 0;
-}
-
-figure.bottom-right-crop {
-  overflow: hidden;
-  margin-left: -2.8rem;
-  width: 125%;
-}
-
-
 .hideMobile {
   display: none;
 }
@@ -495,6 +398,11 @@ figure.bottom-right-crop {
     background: #135E8B url("") ;
   }
     
+  .stories-hope-section {
+    /* background-color: rgba(182, 185, 169, 0.3); */
+      background-color: #e8e9e5;
+    }
+ 
 
   /* .introStudy p:first-child:first-letter {
     float: left;
@@ -508,31 +416,10 @@ figure.bottom-right-crop {
     padding-top: 5rem;
   }
 
-  .artifactsCollage {
-    background: rgba(182, 185, 169, 0.7) url("/img/sketchFW.jpg") no-repeat 0% 200%;
-    background-size: 100%;
-    background-position: bottom;
-    padding: 0 0 20rem 0;
-  }
-
+  
   .quote {
     padding-left: 13%;
     padding-right: 15%;
-  }
-
-  .studyBlock4 {
-    padding-bottom: 7rem;
-  }
-
-
-  .sidebar4 {
-    padding-bottom: 8rem;
-  }
-
-  figure.top-crop, figure.bottom-side-crop, figure.bottom-right-crop {
-    margin: 2rem 0 5rem 0;
-    width: 100%;
-    align-items: center;
   }
 
   .extrame {
@@ -629,6 +516,10 @@ figure.bottom-right-crop {
   section {
     padding: 0;
   }
+    
+    .studyBlock1 img, .after-homepage img, .stories-after img, .stories-after-feature img, .stories-after-standard img {
+        filter: drop-shadow(0 0 0.2rem rgba(182, 185, 169, 0.8));
+    }
 
   h1 {
     font-size: 5rem;
@@ -641,9 +532,9 @@ figure.bottom-right-crop {
     line-height: 3.5rem;
   }
 
-  h3 {
-    font-size: 2.6rem;
-  }
+ /* h3 {
+    font-size: 2rem;
+  } */
 
   h4 {
     font-size: 2rem;
@@ -773,9 +664,7 @@ figure.bottom-right-crop {
         z-index: 50;
     } 
     
-    .studyBlock1 img, .after-homepage img {
-        filter: drop-shadow(0 0 0.2rem rgba(182, 185, 169, 0.8));
-    }
+    
     
     .redesign-text {
         margin-top:4rem;
@@ -795,13 +684,11 @@ figure.bottom-right-crop {
     
     
     .studyBlock1 .redesign-text {
-      display: grid;
         grid-column: 6 / 12;
       grid-row: 5;
     }
 
     .after-homepage {
-        display: grid;
         grid-column: 7 / 14;
         grid-row: 5;
         margin-top:60rem;
@@ -809,7 +696,6 @@ figure.bottom-right-crop {
   }
 
      .redesign-after-text {
-        display: grid;
         grid-column: 3 / 8;
         grid-row: 6;
         background-color:#fff;
@@ -817,33 +703,86 @@ figure.bottom-right-crop {
          margin-top:-50rem;
          z-index: 400;
          filter: drop-shadow(0 0 0.2rem rgba(182, 185, 169, 0.8));
-
+         margin-bottom:10rem;
   }
-    .work-in-progress {
+   
+    
+    .stories-hope-section {
         display: grid;
-        grid-column: 4 / 10;
+        grid-column: 1 / 15;        
         grid-row: 7;
-        background-color:#135E8B;
-        color:#fff !important;
-        padding:30px;
-        margin:8rem 0;
     }
- 
+    
+    .stories-title {
+        grid-column: 3 / 11;
+        grid-row: 7;
+    }
+    
+    
+     .stories-redesign-text {
+        margin-top:14rem;
+        grid-column: 3 / 8;
+        grid-row: 7;
+        z-index: 45;
+    }
+    
+    .stories-before {
+        grid-column: 10 / 13;
+        grid-row: 7;
+        margin-top:3rem;
+    }
+    
+     .stories-after {
+        grid-column: 3 / 9;
+        grid-row: 7;
+        margin-top:41rem;
+         z-index: 80;
+    }
+    
+    .stories-after-feature {
+        grid-column: 10 / 13;
+        grid-row: 7;
+        margin-top:50rem;
+    }
+    
+      .stories-after-standard {
+        grid-column: 8 / 14;
+        grid-row: 7;
+          padding:1rem;
+        margin-top:111rem;
+        z-index: 82;
+        margin-bottom: 10rem;
+    }
+    
+    .stories-redesign-text-summary {
+        margin-top: 130rem;
+        grid-column: 3 / 8;
+        grid-row: 7;
+        z-index: 85;
+    }
 
 
     .callout2 {
       margin-top: 3rem;
       grid-column: 5 / 11;
-      grid-row: 8;
+      grid-row: 7;
     }
 
    
+     .work-in-progress {
+        grid-column: 4 / 10;
+        grid-row: 8;
+        background-color:#135E8B;
+        color:#fff !important;
+        padding:30px;
+        margin:8rem 0;
+    }
 
 
 
 
     footer {
-      margin-top:10rem;
+      /* margin-top:10rem; */
       background-size: 50%;
       grid-column: 1 / 15;
       grid-row: 13;
